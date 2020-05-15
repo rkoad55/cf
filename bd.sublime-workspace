@@ -1,0 +1,7385 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tr",
+				"true"
+			],
+			[
+				"ta",
+				"target"
+			],
+			[
+				"mar",
+				"margin\tproperty"
+			],
+			[
+				"subdoma",
+				"subdomain"
+			],
+			[
+				"res",
+				"response\tL5 Response"
+			],
+			[
+				"error",
+				"error_reporting"
+			],
+			[
+				"zid",
+				"zone_id"
+			],
+			[
+				"user",
+				"user_key"
+			],
+			[
+				"Re",
+				"Request"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"rocket",
+				"rocket_loader"
+			],
+			[
+				"apac",
+				"apd_dump_regular_resources"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"sur",
+				"survey"
+			],
+			[
+				"surveyda",
+				"surveydata"
+			],
+			[
+				"Surve",
+				"survey"
+			],
+			[
+				"imgL",
+				"imgLong"
+			],
+			[
+				"mysql",
+				"mysql_connect"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"statu",
+				"status_codes"
+			],
+			[
+				"http",
+				"http_statuses"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"boos",
+				"bootstrapToggle"
+			],
+			[
+				"rules",
+				"rulesObj"
+			],
+			[
+				"waf",
+				"wafRule"
+			],
+			[
+				"browser",
+				"browserOnly"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"clientReq",
+				"ClientRequestUserAgent"
+			],
+			[
+				"brows",
+				"browserOnly"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"zones",
+				"zoneshield"
+			],
+			[
+				"success",
+				"successfuly"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"sel",
+				"selectors"
+			],
+			[
+				"selec",
+				"selector"
+			],
+			[
+				"sp",
+				"sprule_id"
+			],
+			[
+				"SpCon",
+				"SpCondition"
+			],
+			[
+				"js",
+				"json_output"
+			],
+			[
+				"jso",
+				"json_output"
+			],
+			[
+				"ua",
+				"uaRules"
+			],
+			[
+				"form-",
+				"form-group"
+			],
+			[
+				"els",
+				"elsAnalytics"
+			],
+			[
+				"zone",
+				"zoneSettings"
+			],
+			[
+				"cfac",
+				"cfaccount"
+			],
+			[
+				"box-s",
+				"box-shadow"
+			],
+			[
+				"load",
+				"loadingContent"
+			],
+			[
+				"ipDe",
+				"ipDetailsModal"
+			],
+			[
+				"dev",
+				"deviceType"
+			],
+			[
+				"deve",
+				"deviceType"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"eve",
+				"event"
+			],
+			[
+				"even",
+				"events"
+			],
+			[
+				"ins",
+				"insertedEvent"
+			],
+			[
+				"Fetch",
+				"FetchCustomCertificates"
+			],
+			[
+				"DeleteCustom",
+				"DeleteCustomCertificate"
+			],
+			[
+				"json_de",
+				"json_decode"
+			],
+			[
+				"arr",
+				"array_combine"
+			],
+			[
+				"zon",
+				"zone"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"_",
+				"_new"
+			],
+			[
+				"t",
+				"target\tAttr"
+			],
+			[
+				"first",
+				"first-child"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"btn-in",
+				"btn-link"
+			],
+			[
+				"btn-",
+				"btn-inverse"
+			],
+			[
+				"select",
+				"selector"
+			],
+			[
+				"count",
+				"country"
+			],
+			[
+				"thr",
+				"threats"
+			],
+			[
+				"elsl",
+				"elsLog"
+			],
+			[
+				"Els",
+				"elsLog"
+			],
+			[
+				"index",
+				"indexName"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"Custom",
+				"customDomain"
+			],
+			[
+				"custom",
+				"customDomain"
+			],
+			[
+				"find",
+				"findOrFail"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"wafP",
+				"wafPanel"
+			],
+			[
+				"swal",
+				"swalType"
+			],
+			[
+				"firs",
+				"firstLog"
+			],
+			[
+				"devic",
+				"deviceType"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"remove",
+				"removeAttr"
+			],
+			[
+				"devi",
+				"deviceType"
+			],
+			[
+				"and",
+				"AND"
+			],
+			[
+				"ret",
+				"Retrieved"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"cfa",
+				"cfaccount"
+			],
+			[
+				"action",
+				"actionID"
+			],
+			[
+				"fir",
+				"first-child"
+			],
+			[
+				"sele",
+				"selector"
+			],
+			[
+				"wa",
+				"wafRules"
+			],
+			[
+				"forwar",
+				"forwarding_url"
+			],
+			[
+				"slee",
+				"select2"
+			],
+			[
+				"always",
+				"always_use_https"
+			],
+			[
+				"x",
+				"xlabel"
+			],
+			[
+				"Page",
+				"PageRule"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"page",
+				"pageRules"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"pageR",
+				"PageRule"
+			],
+			[
+				"spacc",
+				"spaccount_id"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"recor",
+				"record_id"
+			],
+			[
+				"pac",
+				"package"
+			],
+			[
+				"pa",
+				"parsed_status"
+			],
+			[
+				"stat",
+				"status_codes"
+			],
+			[
+				"sta",
+				"status_codes"
+			],
+			[
+				"siz",
+				"size"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"re",
+				"records"
+			],
+			[
+				"dis",
+				"dispatch"
+			],
+			[
+				"best",
+				"best_path"
+			],
+			[
+				"balance",
+				"balances"
+			],
+			[
+				"ord",
+				"order"
+			],
+			[
+				"curr",
+				"current_currency"
+			],
+			[
+				"temp_",
+				"temp_current_amount"
+			],
+			[
+				"temp",
+				"temp_current_currency"
+			],
+			[
+				"order",
+				"order_id"
+			],
+			[
+				"trad",
+				"trade"
+			],
+			[
+				"curren",
+				"current_currency"
+			],
+			[
+				"curre",
+				"current_currency"
+			],
+			[
+				"tra",
+				"trade"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "resources/views/admin/pagerules/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 13023,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/admin/zones/network.blade.php",
+			"settings":
+			{
+				"buffer_size": 4220,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/admin/zones/performance.blade.php",
+			"settings":
+			{
+				"buffer_size": 8812,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/admin/zones/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 7691,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/admin/zones/show.blade.php",
+			"settings":
+			{
+				"buffer_size": 2801,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes/web.php",
+			"settings":
+			{
+				"buffer_size": 9893,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/Admin/FirewallController.php",
+			"settings":
+			{
+				"buffer_size": 13120,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/adminlte/js/app.min.js",
+			"settings":
+			{
+				"buffer_size": 104636,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/partials/topmenu.blade.php",
+			"settings":
+			{
+				"buffer_size": 8563,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/partials/topbar.blade.php",
+			"settings":
+			{
+				"buffer_size": 12865,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/layouts/app.blade.php",
+			"settings":
+			{
+				"buffer_size": 2896,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php \nnamespace App\\Libraries;\n// Code Sample for the CloudFlare Host Provider API\n// Copyright (c) 2010 by CloudFlare, Inc.\n// All Rights Reserved.\n//\n// You may use these Code Samples for any purpose, commercial or otherwise, provided that you\n// adhere to the disclaimer at the bottom of this document. You must also require any transferee of this\n// Code Sample to abide by the terms of the disclaimer.\n//\n// Requires: PHP 5.0.3+ compiled with OpenSSL and CLI support\n// Run from the command line like so:  php test_hostapi.php <ACTION> <params>\n//\n// A) Sample USER_CREATE operations:\n// \n//   // 1) Register a user with CloudFlare, creating the CloudFlare account.\n//   php test_hostapi.php USER_CREATE someuser@example.com some_password\n// \n//   // 2) Same as #1, but also specifying CloudFlare username of 'someuser'.\n//   php test_hostapi.php USER_CREATE someuser@example.com some_password someuser\n// \n//   // 3) Same as #2, but also specifying a unique_id.\n//   php test_hostapi.php USER_CREATE someuser@example.com some_password someuser 1023\n// \n//   // 4) Same as #1, but also specifying a unique_id.\n//   php test_hostapi.php USER_CREATE someuser@example.com some_password - 1023\n//\n// B) Sample ZONE_SET operations:\n//   // 1) Register a zone to route CNAMEs through CloudFlare. Fields are: user_key, zone_name, resolve_to, cnames-to-host\n//   php test_hostapi.php ZONE_SET abcb9319cb395bdb6a8444ac5feabcd1 example.com  resolve-to-cloudflare.example.com  www,blog,@\n//\n\n// Debug settings:\ndefine('DEBUG_LEVEL',      0); // 0 for no debug, 1 for debug, 2 for more debug, etc.\ndefine('PRINT_RESPONSE',   0); // 1 to print the received response\n\n// Service URL:\ndefine('HOST_GW_SERVICE_URL',  'https://api.cloudflare.com/host-gw.html');\n\n// Clobber any previously assigned unique_ids. A 'unique_id' is a custom value,\n// an alias to map a user in your database to one in the CloudFlare system.\n// Any operations that can set a unique_id can be set to automatically \"clobber\"\n// or unassign a previously set unique_id.\ndefine('ENABLE_CLOBBER_UNIQUE_ID', TRUE);\n\n// For API access, specify your host_key:\n// define('HOST_KEY',         '1199be00ce2078a7a52e8fb57ddaabae');\ndefine('HOST_KEY',         '3483a41c9f169200e9f38698586a4d1b');\n\n\nclass Cfhost\n{\n\n\n\n\n\npublic static function request($act,$arg2=NULL,$arg3=NULL,$arg4=NULL,$arg5=NULL)\n{\n\n$params   = array();\n        \nif (!$act) {\n    echo \"ERROR: No operation specified. (Operations: USER_CREATE|USER_AUTH|USER_LOOKUP)\\n\";\n    echo \"Usage: <task> [params]\\n\";\n    exit(1);\n}\n\n$params[\"host_key\"] = HOST_KEY;\n$params[\"act\"]      = strtolower($act);\n\nswitch (strtoupper($act)) {\n \n// Create a CloudFlare account for a user. Register you as the host provider.\ncase \"USER_CREATE\":\n    // required:\n    $params[\"cloudflare_email\"]     = $arg2;\n    $params[\"cloudflare_pass\"]      = $arg3;\n    // optional:\n    $params[\"cloudflare_username\"]  = $arg4 && $arg4 !== '-' ? $arg4 : NULL;\n    $params[\"unique_id\"]            = $arg5 && $arg5 !== '-' ? $arg5 : NULL;\n    break;\n\n// Look a user by 'cloudflare_email' or by a previosly assigned 'unique_id'.\ncase \"USER_LOOKUP\":\n    $lookup_type                    = $arg2;\n    $lookup_value                   = $arg3;\n\n    if ($lookup_type == 'cloudflare_email' || $lookup_type == 'unique_id') {\n        $params[$lookup_type]           = $lookup_value;\n    } else {\n        echo \"ERROR: Invalid USER_LOOKUP type: '$lookup_type'; Options are: cloudflare_email or unique_id\\n\";\n        exit(3);\n    }\n    break;\n\n// Authorize you as the host provider for an existing user.\ncase \"USER_AUTH\":\n    $params[\"cloudflare_email\"]     = $arg2;\n    $params[\"cloudflare_pass\"]      = $arg3;\n    // optional:\n    $params[\"unique_id\"]            = $arg4 && $arg4 !== '-' ? $arg4 : NULL;\n    break;\n\n\n// Setup a Zone.\ncase \"ZONE_SET\":\n    $params[\"user_key\"]             = $arg2;\n    $params[\"zone_name\"]            = $arg3;\n    $params[\"resolve_to\"]           = $arg4;\n    $params[\"subdomains\"]           = $arg5;\n    break;\n\n// Lookup a Zone by 'user_key' and 'zone_name'.\ncase \"ZONE_LOOKUP\":\n    $params[\"user_key\"]             = $arg2;\n    $params[\"zone_name\"]            = $arg3;\n    break;\n\n// Delete a Zone by 'user_key' and 'zone_name'.\ncase \"ZONE_DELETE\":\n    $params[\"user_key\"]             = $arg2;\n    $params[\"zone_name\"]            = $arg3;\n    break;\n\ndefault:\n    echo \"That operation is not supported.\\n\";\n    exit(4);\n}\n\nif (defined(\"ENABLE_CLOBBER_UNIQUE_ID\") && ENABLE_CLOBBER_UNIQUE_ID == 1) {\n    $params[\"clobber_unique_id\"] = 1;\n}\n\n\n\n$response  = Cfhost::performRequest($params);\nif ($response === FALSE) {\n    die(\"Failed to get response from service.\");\n}\n\nreturn Cfhost::processResponse($response);\n\n\n}\n// Contact the service. Returns FALSE on error.\npublic static function performRequest(& $data, $headers=NULL) {\n\n    $ch = curl_init();\n    curl_setopt($ch, CURLOPT_URL, HOST_GW_SERVICE_URL);\n\n    if (DEBUG_LEVEL > 1) {\n        curl_setopt($ch, CURLOPT_VERBOSE, 1); \n    }\n    if (DEBUG_LEVEL > 0) {\n        echo \"REQUEST DATA (to be sent via POST):\\n\";\n        print_r($data);\n    }\n\n    if ($headers) {\n        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers); \n    }\n    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);\n    if ($data) {\n        curl_setopt($ch, CURLOPT_POST, 1);\n        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);\n    }\n\n    curl_setopt($ch, CURLOPT_TIMEOUT, 20); \n    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);\n    curl_setopt($ch, CURLOPT_AUTOREFERER,    TRUE);\n    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);\n\n    if (($http_result = curl_exec($ch)) === FALSE) {\n        echo \"WARNING: A connectivity error occured while contacting the service.\\n\";\n        trigger_error(curl_error($ch));\n        return FALSE;\n    }\n\n    curl_close($ch);\n    return $http_result;\n}\n\npublic static function processResponse(& $response) {\n    $settings  = NULL;\n    \n    if (PRINT_RESPONSE) {\n        echo \"RAW RESPONSE DATA:\\n\".$response.\"\\n\";\n    }\n\n    // echo \"DECODED RESPONSE DATA:\\n\";\n    $decoded_response = json_decode($response);\n    return $decoded_response;\n    // print_r($decoded_response);\n}\n\n\n\n\n//\n// Use of this Code Sample is at Your Own Risk\n//\n// You understand that your use of the this Code Sample is at your own risk, i.e. CloudFlare, Inc.\n// (CloudFlare) will not be liable either directly or indirectly to you or any third party transferee recipient of the Code Sample.\n// CloudFlare is under no obligation to provide you with any error corrections, updates, upgrades, bug fixes and/or enhancements of the Code Sample.\n//\n// This Code Sample May Not Include Adequate System Protection Functionality\n//\n// The code sample included herein has not been reviewed for suitability in terms of error-handling, system loading, memory requirements,\n// CPU usage or other factors that may influence the operation of systems on which it is installed.\n//\n// Disclaimer of Warranty; Limitation of Liability\n//\n// YOUR USE OF THIS CODE SAMPLE IS AT YOUR SOLE RISK. ANY CODE SAMPLE IS PROVIDED \"AS IS,\" \"WITH ALL FAULTS\" AND \"AS AVAILABLE\" FOR YOUR USE,\n// WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, UNLESS SUCH WARRANTIES ARE LEGALLY INCAPABLE OF EXCLUSION. SPECIFICALLY,\n// CloudFlare AND ITS VENDORS DISCLAIM IMPLIED WARRANTIES THAT THE CODE SAMPLE IS MERCHANTABLE, OF SATISFACTORY QUALITY, ACCURATE, FIT FOR A PARTICULAR\n// PURPOSE OR NEED, OR NON-INFRINGING. CloudFlare AND ITS VENDORS DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE CODE SAMPLE WILL MEET YOUR REQUIREMENTS\n// OR THAT THE CODE SAMPLE IS ERROR-FREE, OR THAT DEFECTS IN THE CODE SAMPLE WILL BE CORRECTED. CloudFlare AND ITS VENDORS DO NOT WARRANT OR MAKE ANY\n// REPRESENTATIONS REGARDING THE USE OR THE RESULTS OF THE USE OF THE CODE SAMPLE OR RELATED DOCUMENTATION IN TERMS OF THEIR CORRECTNESS, ACCURACY,\n// RELIABILITY OR OTHERWISE. \n//\n\n\n}\n?>\n",
+			"file": "/home/wasiflaeeq/Desktop/cf/app/Libraries/Cfhost.php",
+			"file_size": 7910,
+			"file_write_time": 131919385986317982,
+			"settings":
+			{
+				"buffer_size": 7875,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "curl https://api.cloudflare.com/host-gw.html \\\n  -d 'act=zone_set' \\\n  -d 'host_key=1199be00ce2078a7a52e8fb57ddaabae' \\\n  -d 'user_key=b9a4a4c2257ac7a318fdf48011044778' \\\n  -d 'zone_name=someexample.com' \\\n  -d 'resolve_to=cloudflare-resolve-to.someexample.com' \\\n  -d 'subdomains=www,blog,wordpress:cloudflare-rs2.someexample.com'\n\n\n\n\ncurl https://api.cloudflare.com/host-gw.html \\\n  -d 'act=user_lookup' \\\n  -d 'host_key=3483a41c9f169200e9f38698586a4d1b' \\\n  -d 'cloudflare_email=cfpro@wafprotection.com'\n",
+			"settings":
+			{
+				"buffer_size": 507,
+				"line_ending": "Unix",
+				"name": "curl https://api.cloudflare.com/host-gw.html \\"
+			}
+		},
+		{
+			"file": "/run/user/1000/doc/f762c26f/CompileScript.php",
+			"settings":
+			{
+				"buffer_size": 556,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/run/user/1000/doc/5225d894/mh-cache.php",
+			"settings":
+			{
+				"buffer_size": 17178,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/run/user/1000/doc/a8740009/CompileScript.php",
+			"settings":
+			{
+				"buffer_size": 649,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/run/user/1000/doc/3a4579fc/av.php",
+			"settings":
+			{
+				"buffer_size": 787,
+				"encoding": "Hexadecimal",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/wasiflaeeq/Desktop/google oauth",
+			"settings":
+			{
+				"buffer_size": 99,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/wasiflaeeq/Desktop/cf/vendor/cloudflare/sdk/src/Endpoints/Zones.php",
+			"settings":
+			{
+				"buffer_size": 9773,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/css/custom.css",
+			"settings":
+			{
+				"buffer_size": 17601,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/admin/spfirewall/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 58914,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/v3/css/styles.css",
+			"settings":
+			{
+				"buffer_size": 10006,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/admin/firewall/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 28786,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/admin/dns/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 13134,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 127 files for \"modal-header\"\n\n/home/wasiflaeeq/Desktop/bd/resources/views/admin/analytics/index.blade.php:\n  727     <div class=\"modal-dialog modal-ip\" >\n  728      <div class=\"modal-content\">\n  729:       <div class=\"modal-header\">\n  730          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  731          <h4 class=\"modal-title\">IP Details</h4>\n  ...\n  748     <div class=\"modal-dialog modal-browsers\" >\n  749      <div class=\"modal-content\">\n  750:       <div class=\"modal-header\">\n  751          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  752          <h4 class=\"modal-title\">{{ $key }} Versions Breakdown</h4>\n\n/home/wasiflaeeq/Desktop/bd/resources/views/admin/dns/index.blade.php:\n  258    <div class=\"modal-dialog modal-lg\" >\n  259      <div class=\"modal-content\">\n  260:       <div class=\"modal-header\">\n  261           <h4 class=\"modal-title\">Create DNS</h4>\n  262          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n\n/home/wasiflaeeq/Desktop/bd/resources/views/admin/els/index.blade.php:\n   83     <div class=\"modal-dialog modal-lg\" >\n   84      <div class=\"modal-content\">\n   85:       <div class=\"modal-header\">\n   86          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n   87          <h4 class=\"modal-title\">Enable Enterprise Log Share Parsing</h4>\n\n/home/wasiflaeeq/Desktop/bd/resources/views/admin/firewall/index.blade.php:\n  595     <div class=\"modal-dialog modal-lg\" >\n  596      <div class=\"modal-content\">\n  597:       <div class=\"modal-header\">\n  598          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  599          <h4 class=\"modal-title\">Event Details</h4>\n  ...\n  692    <div class=\"modal-dialog modal-lg\" >\n  693      <div class=\"modal-content\">\n  694:       <div class=\"modal-header\">\n  695          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  696          <h4 class=\"modal-title\">Add Access Rule</h4>\n  ...\n  747     <div class=\"modal-dialog modal-lg\" >\n  748      <div class=\"modal-content\">\n  749:       <div class=\"modal-header\">\n  750          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  751          <h4 class=\"modal-title\">Add User Agent Blocking Rule</h4>\n  ...\n  818     <div class=\"modal-dialog modal-lg\" >\n  819      <div class=\"modal-content\">\n  820:       <div class=\"modal-header\">\n  821          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  822          <h4 class=\"modal-title\">Edit User Agent Blocking Rule</h4>\n  ...\n  890     <div class=\"modal-dialog modal-ip\" >\n  891      <div class=\"modal-content\">\n  892:       <div class=\"modal-header\">\n  893          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  894          <h4 class=\"modal-title\">WAF Group Details</h4>\n\n/home/wasiflaeeq/Desktop/bd/resources/views/admin/pagerules/index.blade.php:\n  218     <div class=\"modal-dialog modal-lg\" >\n  219      <div class=\"modal-content\">\n  220:       <div class=\"modal-header\">\n  221           <h4 class=\"modal-title\">Edit Page Rule</h4>\n  222          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  ...\n  307     <div class=\"modal-dialog modal-lg\" >\n  308      <div class=\"modal-content\">\n  309:       <div class=\"modal-header\">\n  310          <h4 class=\"modal-title\">Add Custom WAF Rule</h4>\n  311          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n\n/home/wasiflaeeq/Desktop/bd/resources/views/admin/panelLogs/audit_logs.blade.php:\n   69     <div class=\"modal-dialog modal-lg\" >\n   70      <div class=\"modal-content\">\n   71:       <div class=\"modal-header\">\n   72          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n   73          <h4 class=\"modal-title\">Enable Enterprise Log Share Parsing</h4>\n\n/home/wasiflaeeq/Desktop/bd/resources/views/admin/panelLogs/index.blade.php:\n   78     <div class=\"modal-dialog modal-lg\" >\n   79      <div class=\"modal-content\">\n   80:       <div class=\"modal-header\">\n   81          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n   82          <h4 class=\"modal-title\">Enable Enterprise Log Share Parsing</h4>\n\n/home/wasiflaeeq/Desktop/bd/resources/views/admin/spfirewall/index.blade (copy).php:\n  334     <div class=\"modal-dialog modal-lg\" >\n  335      <div class=\"modal-content\">\n  336:       <div class=\"modal-header\">\n  337          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  338          <h4 class=\"modal-title\">Add Custom WAF Rule</h4>\n\n/home/wasiflaeeq/Desktop/bd/resources/views/admin/spfirewall/index.blade.php:\n  163     <div class=\"modal-dialog modal-lg\" >\n  164      <div class=\"modal-content\">\n  165:       <div class=\"modal-header\">\n  166          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  167          <h4 class=\"modal-title\">Event Details</h4>\n  ...\n  482     <div class=\"modal-dialog modal-lg\" >\n  483      <div class=\"modal-content\">\n  484:       <div class=\"modal-header\">\n  485          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  486          <h4 class=\"modal-title\">Add Custom WAF Rule</h4>\n  ...\n  855     <div class=\"modal-dialog modal-lg\" >\n  856      <div class=\"modal-content\">\n  857:       <div class=\"modal-header\">\n  858          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  859          <h4 class=\"modal-title\">Add Custom WAF Rule</h4>\n  ...\n  977     <div class=\"modal-dialog modal-lg\" >\n  978      <div class=\"modal-content\">\n  979:       <div class=\"modal-header\">\n  980          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  981          <h4 class=\"modal-title\">Edit WAF Rule</h4>\n\n/home/wasiflaeeq/Desktop/bd/resources/views/admin/spfirewall/old/index.blade.php:\n  334     <div class=\"modal-dialog modal-lg\" >\n  335      <div class=\"modal-content\">\n  336:       <div class=\"modal-header\">\n  337          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  338          <h4 class=\"modal-title\">Add Custom WAF Rule</h4>\n\n/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/crypto.blade.php:\n  517     <div class=\"modal-dialog modal-lg\" >\n  518      <div class=\"modal-content\">\n  519:       <div class=\"modal-header\">\n  520          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  521          <h4 class=\"modal-title\">Add New SSL</h4>\n\n/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/spLogs.blade.php:\n  162     <div class=\"modal-dialog modal-lg\" >\n  163      <div class=\"modal-content\">\n  164:       <div class=\"modal-header\">\n  165          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n  166          <h4 class=\"modal-title\">Event Details</h4>\n\n21 matches across 12 files\n\n\nSearching 127 files for \"                    <div class=\"topbar-links\">\"\n\n/home/wasiflaeeq/Desktop/bd/resources/views/partials/topbar.blade.php:\n   14                  </div>\n   15                  <div class=\"col-xs-12 col-md-4\">\n   16:                     <div class=\"topbar-links\">\n   17                          <ul>\n   18  \n   ..\n  271                  </div>\n  272                  <div class=\"col-xs-12 col-md-4\">\n  273:                     <div class=\"topbar-links\">\n  274                          <ul>\n  275  \n\n2 matches in 1 file\n\n\nSearching 127 files for \"\"main\"\"\n\n/home/wasiflaeeq/Desktop/bd/resources/views/layouts/app.blade.php:\n   23  @include('partials.sidebar')\n   24  <!-- Content Wrapper. Contains page content -->\n   25:     <div class=\"main\">\n   26          <div class=\"container\">\n   27              @if(isset($siteTitle))\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 8875,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "resources/views/admin/analytics/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 45800,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"docb",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"doc",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"laravel",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"Snippet: laravel",
+				"Snippet: Throws an HTTP exception if a given boolean expression evaluates to false."
+			],
+			[
+				"Snippet: ",
+				"Snippet: Blade @auth"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: isn",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: is",
+				"Package Control: Install Package"
+			],
+			[
+				"forma",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			]
+		],
+		"width": 1246.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/wasiflaeeq/Desktop/bd",
+		"/home/wasiflaeeq/Desktop/bd/resources",
+		"/home/wasiflaeeq/Desktop/bd/resources/views",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/layouts"
+	],
+	"file_history":
+	[
+		"/home/wasiflaeeq/tonyenc/av.php",
+		"/run/user/1000/doc/3db111ec/CompileScript.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/partials/header.blade.php",
+		"/home/wasiflaeeq/Desktop/TV.m3u",
+		"/home/wasiflaeeq/Desktop/bd/app/PageRule.php",
+		"/home/wasiflaeeq/Desktop/bd/public/css/custom.css",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/partials/javascripts.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/public/v3/css/styles.css",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/firewall/index.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/pagerules/index.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/spfirewall/index.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/analytics/index.blade.php",
+		"/home/wasiflaeeq/Desktop/v3/panel-speed.html",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/partials/head.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/partials/topmenu.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/partials/topbar.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/assets/sass/_variables.scss",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/cfaccounts/import.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/dns/index.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/els/index.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/packages/create.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/spfirewall/index.blade (copy).php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/spfirewall/old/index.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/subUsers/create.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/subUsers/edit.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/tokens/createReseller.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/tokens/edit.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/users/create.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/users/createReseller.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/users/edit.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/spaccounts/import.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/statuscake/import.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/crypto.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/show.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/caching.blade.php",
+		"/home/wasiflaeeq/Desktop/diamantedesk-application/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/performance.blade.php",
+		"/home/wasiflaeeq/Desktop/v3/panel-analytics.html",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/panelLogs/audit_logs.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/panelLogs/index.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/public/adminlte/css/AdminLTE.css",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/spshow.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/spperformance.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/spcaching.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/seo.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/network.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/contentProtection.blade.php",
+		"/home/wasiflaeeq/Desktop/Replace",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/spanalytics/index.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/tokens/index.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/origin.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones/spLogs.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/layouts/app.blade.php",
+		"/home/wasiflaeeq/Desktop/cf/resources/views/home.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/vendor/cloudflare/sdk/src/Endpoints/Zones.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/home.blade.php",
+		"/home/wasiflaeeq/Desktop/v3/dashboard-home.html",
+		"/home/wasiflaeeq/Desktop/cf/resources/views/admin/zones/performance.blade.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/layouts/auth.blade.php",
+		"/run/user/1000/doc/7259db5a/database.php",
+		"/home/wasiflaeeq/Desktop/bd/resources/views/auth/login.blade.php",
+		"/home/wasiflaeeq/Desktop/v3/login.html",
+		"/home/wasiflaeeq/Desktop/varnishmanager/config/remote.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/config/app.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/storage/logs/laravel-2018-12-25.log",
+		"/home/wasiflaeeq/Desktop/cf/app/Jobs/UpdateDnsRecord.php",
+		"/home/wasiflaeeq/Desktop/cf/vendor/cloudflare/sdk/src/Endpoints/DNS.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/vendor/cloudflare/sdk/src/Endpoints/PageRules.php",
+		"/run/user/1000/doc/a0eabc8e/cptest.php",
+		"/run/user/1000/doc/f07c1cc8/xmlapi.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/vendor/tcg/voyager/src/Http/Controllers/VoyagerBaseController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/vendor/tcg/voyager/src/Http/Controllers/Controller.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/vendor/tcg/voyager/src/Http/Controllers/VoyagerController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/VarnishServer.php",
+		"/home/wasiflaeeq/Desktop/varnish",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/Website.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/resources/views/vendor/voyager/websites/edit-add.blade.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/resources/views/vendor/voyager/websites/read.blade.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/routes/api.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/routes/web.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/Wordpress.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/Http/Controllers/Admin/ReplicateController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/resources/views/replicate.blade.php",
+		"/home/wasiflaeeq/.cache/.fr-NiJRfu/beta1/sync.php",
+		"/home/wasiflaeeq/.cache/.fr-R9CkKF/whm-php-wptools/phpinfo.php",
+		"/home/wasiflaeeq/.cache/.fr-LiCs8H/whm-php-wptools/todo/whmsuperb_wptoolsservices_updatewpplugins.live.php",
+		"/home/wasiflaeeq/.cache/.fr-L5xibM/whm-php-resourcemanager/detectosdistro.php",
+		"/home/wasiflaeeq/.cache/.fr-GwhkoO/whm-php-resourcemanager/updateappsinstallercagefssettings.php",
+		"/home/wasiflaeeq/.cache/.fr-L3fecZ/whm-php-resourcemanager/accountlimits.php",
+		"/home/wasiflaeeq/.cache/.fr-dT5n0M/whm-php-resourcemanager/whmsuperb.php",
+		"/home/wasiflaeeq/.cache/.fr-u8djhK/whm-php-wptools/whmsuperb.php",
+		"/run/user/1000/doc/deb6a634/Websocket.php",
+		"/run/user/1000/doc/9500793d/Pay_processing.php",
+		"/run/user/1000/doc/a5e88c5f/Pay_processing.php",
+		"/home/wasiflaeeq/Desktop/diame",
+		"/run/user/1000/doc/cb7b9168/os.php",
+		"/home/wasiflaeeq/.cache/.fr-8Jfqrj/whm-php-wptools/config.php",
+		"/home/wasiflaeeq/.cache/.fr-Y1s4NB/whm-php-wptools/detectosdistro.php",
+		"/home/wasiflaeeq/.cache/.fr-lABExn/cpanel-php/whmsuperb-wptoolsservices-plugin/wptoolsservicescpanel/bootstrap.php",
+		"/home/wasiflaeeq/.cache/.fr-kryRoh/cpanel-php/whmsuperb-wptoolsservices-plugin/wptoolsservicescpanel/functions.php",
+		"/home/wasiflaeeq/.cache/.fr-zJL9Dr/cpanel-php/whmsuperb-wptoolsservices-plugin/wptoolsservicescpanel/footer_legacy.php",
+		"/home/wasiflaeeq/.cache/.fr-0GppDN/whm-php-wptools/information_server_io.php",
+		"/home/wasiflaeeq/Desktop/cf/vendor/cloudflare/sdk/src/Endpoints/Zones.php",
+		"/home/wasiflaeeq/Desktop/cf/app/Http/Controllers/Admin/ZoneController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/resources/views/vendor/voyager/wordpresses/read.blade.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/vendor/tcg/voyager/src/Http/Controllers/VoyagerBreadController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/Http/Controllers/Admin/VoyagerCompassController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/Http/Controllers/Admin/VoyagerMediaController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/Http/Controllers/Admin/VoyagerBreadController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/Http/Controllers/Admin/VoyagerBaseController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/vendor/tcg/voyager/src/Http/Controllers/VoyagerAuthController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/vendor/tcg/voyager/src/Http/Controllers/VoyagerMenuController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/Http/Controllers/Admin/VoyagerController.php",
+		"/home/wasiflaeeq/Desktop/cf/routes/web.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/Http/Controllers/Admin/VoyagerDatabaseController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/vendor/tcg/voyager/src/Http/Controllers/VoyagerMediaController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/vendor/tcg/voyager/src/Http/Controllers/VoyagerDatabaseController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/Http/Controllers/Replicate.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/config/voyager.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/Http/Controllers/Admin/VoyagerAuthController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/Http/Controllers/Auth/VerificationController.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/resources/views/vendor/voyager/wordpress/read.blade.php",
+		"/home/wasiflaeeq/Desktop/cf/app/Console/Kernel.php",
+		"/run/user/1000/doc/a220d8a4/subdomain.php",
+		"/run/user/1000/doc/80dec712/adddns_example.php",
+		"/home/wasiflaeeq/Desktop/varnishmanager/app/Wordpresses.php",
+		"/run/user/1000/doc/e9954eab/listzones_example.php",
+		"/run/user/1000/doc/524a633/listips_example.php"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 178.0,
+		"where_history":
+		[
+			"/home/wasiflaeeq/Desktop/bd/resources",
+			"/home/wasiflaeeq/Desktop/diamantedesk",
+			"/home/wasiflaeeq/Desktop/bd/resources/views/admin/",
+			"/home/wasiflaeeq/Desktop/bd/resources/views/admin/zones",
+			"/home/wasiflaeeq/Desktop/bd/resources/views/admin",
+			"",
+			"/home/wasiflaeeq/Desktop/RegistrationGeneric",
+			"/home/wasiflaeeq/Desktop/,/home/wasiflaeeq/Desktop/RegistrationGeneric",
+			"/home/wasiflaeeq/Desktop/cf/app/Jobs",
+			"/home/wasiflaeeq/Desktop/cf/app/jobs",
+			"/home/wasiflaeeq/Desktop/cf",
+			"/home/wasiflaeeq/Desktop/zenbot-unstable",
+			"/home/wasiflaeeq/Desktop/cf/resources/views",
+			"/home/wasiflaeeq/Desktop/cf/app/",
+			"/home/wasiflaeeq/Desktop/cf/app/http",
+			"/home/wasiflaeeq/zenbot"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"menu",
+			"aside",
+			"\"main\"",
+			"                    <div class=\"topbar-links\">",
+			"sortPageRule",
+			"wafGroupDetails",
+			"waitingDialog",
+			"wafGroupDetails",
+			"panel panel-success",
+			"panel-",
+			"overview",
+			"glyphicon glyphicon-edit",
+			"modal-header",
+			"modal-head",
+			"modal-heading",
+			"class=\"btn\"",
+			"class=\"btn \"",
+			"data-offstyle=\"default\"",
+			"btn-default",
+			"toggle",
+			"panel-body",
+			"panel-heading",
+			"panel-headin",
+			"This setting was last changed 2 days ago",
+			"<div class=\"card\">",
+			"#requests",
+			"requests",
+			"2125",
+			"descr",
+			"mode",
+			"Group",
+			"waf",
+			"toolt",
+			"pointfo",
+			"f7f7",
+			"f7f",
+			"#36",
+			"#38383A",
+			"traffic_container",
+			"DatagridConfiguration",
+			"devwasif_dia",
+			"<a ",
+			"glyphicon glyphicon-remove",
+			"pull-right",
+			"ua-rule-modal",
+			"ua-rule-modal'",
+			"ua-rule-modal",
+			"fade",
+			"add_rule",
+			"rule-ed",
+			"firewall",
+			"gly",
+			"waf",
+			"IP Firewall",
+			"rule-edit-modal",
+			"</div>\n</div>\n\n@stop\n\n@section('javascript') ",
+			"</div>\n</div>\n@stop\n\n@section('javascript') ",
+			"</h2>\n <input type=\"hidden\" name=\"csrftoken\" value=\"{{csrf_token()}}\" >\n    ",
+			"<div class=\"row\">\n                <div class=\"col-xs-12\">",
+			"<div class=\"col-lg-4 right \">",
+			"<div class=\"col-lg-8\">",
+			"<div class=\"panel-body  row\">",
+			"<div class=\"panel panel-default panel-main\">",
+			"selec",
+			"<p class=\"hidden\">This setting was last changed 2 days ago</p>",
+			"<p class=\"text-info\">This setting was last changed 2 days ago</p>",
+			"<div class=\"col-sm-12 col-md-9 left\">",
+			"col-lg-4 right",
+			"col-lg-8",
+			"panel-body  row",
+			"panel panel-default panel-main",
+			"settings",
+			"1.9",
+			"logo",
+			"fav",
+			"bootstrap",
+			"VIEW",
+			"login",
+			"auth",
+			"constr",
+			"getTranslationsOf",
+			"/**\n",
+			"$cf",
+			"curl_file_c",
+			"listzones",
+			"xmlapi_query",
+			"addns",
+			"cloudflare",
+			"all-vhosts.vcl",
+			"ssh",
+			"Collective\\Remote\\RemoteServiceProvider::class",
+			"pip",
+			"call_method",
+			"token",
+			"loadBalancer",
+			"branding",
+			"els(",
+			"function ",
+			"status",
+			"adapter",
+			"manage",
+			".main",
+			"mcbbearings.com",
+			"            \n",
+			"processResponse",
+			"request",
+			"processResponse",
+			"PRINT_RESPONSE",
+			"user_ke",
+			"cfhost",
+			"allow",
+			"store(",
+			";",
+			"    set_real_ip_from ",
+			"set_real_ip_from",
+			"\n",
+			"Auth::routes() is",
+			"auth",
+			"#",
+			"\t",
+			" \t",
+			"144.25",
+			"\t",
+			" \t",
+			"parse_",
+			"parse_us",
+			"parse_user_agent",
+			"ClientRequestUserAgent"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"fas fa-edit",
+			"modal-header",
+			"class=\"btn btn-primary\"",
+			"data-offstyle=\"secondary\"",
+			"btn-outline-primary",
+			"card-body",
+			"<div class=\"card card-analytics\">",
+			"<div class=\"card card-2col\">",
+			"<a href=\"#\" ",
+			"fas fa-times",
+			"float-right",
+			"</div>\n</div>\n\n</div>\n</div>\n@stop\n\n@section('javascript') ",
+			"</h2>\n</div>\n <input type=\"hidden\" name=\"csrftoken\" value=\"{{csrf_token()}}\" >\n    ",
+			"<div class=\"content\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col\">\n          <div class=\"content-title\">",
+			"<div class=\"col-sm-12 col-md-3 right\">",
+			"<div class=\"row no-gutters\">\n\t\t<div class=\"col-sm-12 col-md-9 left\">",
+			"<div class=\"card-body\">",
+			"<div class=\"card card-2col\">",
+			"<small class=\"hidden\">This setting was last changed 2 days ago</small>",
+			"<p class=\"hidden\">This setting was last changed 2 days ago</p>",
+			"<div class=\"row no-gutters\">\n          <div class=\"col-sm-12 col-md-9 left\">",
+			"div class=\"row no-gutters\">\n          <div class=\"col-sm-12 col-md-9 left\">",
+			"col-sm-12 col-md-3 right",
+			"col-sm-12 col-md-9 left",
+			"card-body",
+			"card card-2col",
+			"pip3",
+			"mcb.ae",
+			"\t# Cloudfront IP's",
+			"",
+			"    set_real_ip_from",
+			";\nset_real_ip_from ",
+			"# do not delete ",
+			"# do not delete",
+			" \t#",
+			"enabled' => false",
+			" \t#Emirates",
+			"https://workspace.destring.com/mcb",
+			"http://workspace.destring.com/mcb",
+			"asfasf",
+			";\n    ",
+			"",
+			" set_real_ip_from ",
+			"set_real_ip_from ",
+			"')->nullable();",
+			";",
+			"),\n$t",
+			"',\n$table->string('",
+			"',\n'",
+			"'",
+			"",
+			"'",
+			".on(\"load\",",
+			"\", cursor.getString(0));",
+			"\"",
+			"record.put(\"",
+			" \n \"",
+			"  ",
+			" ",
+			" \n",
+			" TEXT NOT NULL, \" +\n",
+			"extra.add",
+			"params.put(",
+			");",
+			" = ",
+			"String ",
+			"T",
+			"T,",
+			">",
+			"<",
+			"tamp;?>",
+			"$(\"#rule-edit-modal_\"+ruleid+\" #settings\")",
+			", SerializesModels;\n\n    public $user_id,",
+			"{{ $event['",
+			"$zone",
+			"$events",
+			"{{ $elslog->index }}",
+			"SP",
+			"\\'",
+			"elastic.blockdos.net",
+			" ",
+			" --",
+			"BlockDOS",
+			"$zone",
+			"cache_valid",
+			"spaccount",
+			"StackPath",
+			"spAcc",
+			"spAccount",
+			"spaccount",
+			"Spaccount",
+			"spAccounts",
+			"spaccoun",
+			"Spaccoun",
+			"admin.spaccounts",
+			"Spaccount",
+			"USDT",
+			"BTC",
+			"BTC!!",
+			"BTC",
+			"$traded",
+			"//var_dump",
+			"completed",
+			",",
+			"",
+			"track"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 17,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "resources/views/admin/pagerules/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13023,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6465,
+								6465
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3947.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/views/admin/zones/network.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4020,
+								4020
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3132.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/admin/zones/performance.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7370,
+								7370
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5670.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "resources/views/admin/zones/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1790,
+								1790
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 566.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "resources/views/admin/zones/show.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2801,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								708,
+								708
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "routes/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9893,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8162,
+								8162
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2906.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/Http/Controllers/Admin/FirewallController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5095,
+								5095
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3572.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "public/adminlte/js/app.min.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 104636,
+						"regions":
+						{
+							"col_00000033":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1621,
+										1636
+									]
+								],
+								"scope": "col_00000033"
+							},
+							"col_00000033_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00000033_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_000000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7055,
+										7060
+									],
+									[
+										15895,
+										15899
+									],
+									[
+										16405,
+										16409
+									]
+								],
+								"scope": "col_000000FF"
+							},
+							"col_000000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									],
+									[
+										15863,
+										15863
+									],
+									[
+										16373,
+										16373
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_000080FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6925,
+										6929
+									]
+								],
+								"scope": "col_000080FF"
+							},
+							"col_000080FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000080FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_0000FFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6910,
+										6914
+									]
+								],
+								"scope": "col_0000FFFF"
+							},
+							"col_0000FFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_0000FFFF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_001F3FFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6931,
+										6938
+									]
+								],
+								"scope": "col_001F3FFF"
+							},
+							"col_001F3FFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_001F3FFF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_0073B7FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6916,
+										6923
+									]
+								],
+								"scope": "col_0073B7FF"
+							},
+							"col_0073B7FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_0073B7FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_008000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6862,
+										6867
+									]
+								],
+								"scope": "col_008000FF"
+							},
+							"col_008000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_008000FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_008080FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6940,
+										6944
+									]
+								],
+								"scope": "col_008080FF"
+							},
+							"col_008080FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_008080FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_00A65AFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6869,
+										6876
+									]
+								],
+								"scope": "col_00A65AFF"
+							},
+							"col_00A65AFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00A65AFF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_00C0EFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6884,
+										6891
+									]
+								],
+								"scope": "col_00C0EFFF"
+							},
+							"col_00C0EFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00C0EFFF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_00FF00FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6971,
+										6975
+									]
+								],
+								"scope": "col_00FF00FF"
+							},
+							"col_00FF00FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00FF00FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_00FFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6878,
+										6882
+									]
+								],
+								"scope": "col_00FFFFFF"
+							},
+							"col_00FFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00FFFFFF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_01FF70FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6977,
+										6984
+									]
+								],
+								"scope": "col_01FF70FF"
+							},
+							"col_01FF70FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_01FF70FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_222222FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7062,
+										7069
+									]
+								],
+								"scope": "col_222222FF"
+							},
+							"col_222222FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_222222FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_39CCCCFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6946,
+										6953
+									]
+								],
+								"scope": "col_39CCCCFF"
+							},
+							"col_39CCCCFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_39CCCCFF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_3C8DBCFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6839,
+										6846
+									]
+								],
+								"scope": "col_3C8DBCFF"
+							},
+							"col_3C8DBCFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_3C8DBCFF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_3D9970FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6962,
+										6969
+									]
+								],
+								"scope": "col_3D9970FF"
+							},
+							"col_3D9970FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_3D9970FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_800000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7038,
+										7044
+									]
+								],
+								"scope": "col_800000FF"
+							},
+							"col_800000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_800000FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_800080FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7021,
+										7027
+									]
+								],
+								"scope": "col_800080FF"
+							},
+							"col_800080FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_800080FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_808000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6955,
+										6960
+									]
+								],
+								"scope": "col_808000FF"
+							},
+							"col_808000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_808000FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_808080FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7071,
+										7075
+									]
+								],
+								"scope": "col_808080FF"
+							},
+							"col_808080FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_808080FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_8E24AAFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7029,
+										7036
+									]
+								],
+								"scope": "col_8E24AAFF"
+							},
+							"col_8E24AAFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_8E24AAFF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_D2D6DEFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7077,
+										7084
+									]
+								],
+								"scope": "col_D2D6DEFF"
+							},
+							"col_D2D6DEFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_D2D6DEFF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_D81B60FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7046,
+										7053
+									]
+								],
+								"scope": "col_D81B60FF"
+							},
+							"col_D81B60FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_D81B60FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F012BEFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7012,
+										7019
+									]
+								],
+								"scope": "col_F012BEFF"
+							},
+							"col_F012BEFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F012BEFF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F39C12FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6901,
+										6908
+									]
+								],
+								"scope": "col_F39C12FF"
+							},
+							"col_F39C12FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F39C12FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F56954FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6853,
+										6860
+									]
+								],
+								"scope": "col_F56954FF"
+							},
+							"col_F56954FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F56954FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FF0000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6848,
+										6851
+									],
+									[
+										31133,
+										31140
+									],
+									[
+										31822,
+										31829
+									],
+									[
+										32402,
+										32409
+									],
+									[
+										32905,
+										32912
+									],
+									[
+										38425,
+										38432
+									],
+									[
+										39172,
+										39179
+									],
+									[
+										39837,
+										39844
+									],
+									[
+										40398,
+										40405
+									]
+								],
+								"scope": "col_FF0000FF"
+							},
+							"col_FF0000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									],
+									[
+										31005,
+										31005
+									],
+									[
+										31694,
+										31694
+									],
+									[
+										32275,
+										32275
+									],
+									[
+										32777,
+										32777
+									],
+									[
+										38269,
+										38269
+									],
+									[
+										39015,
+										39015
+									],
+									[
+										39681,
+										39681
+									],
+									[
+										40241,
+										40241
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FF00FFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7003,
+										7010
+									]
+								],
+								"scope": "col_FF00FFFF"
+							},
+							"col_FF00FFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FF00FFFF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FF851BFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6994,
+										7001
+									]
+								],
+								"scope": "col_FF851BFF"
+							},
+							"col_FF851BFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FF851BFF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFA500FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6986,
+										6992
+									]
+								],
+								"scope": "col_FFA500FF"
+							},
+							"col_FFA500FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFA500FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFF00FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6893,
+										6899
+									]
+								],
+								"scope": "col_FFFF00FF"
+							},
+							"col_FFFF00FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFF00FF_circle.png",
+								"regions":
+								[
+									[
+										401,
+										401
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								42927,
+								42927
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 23552.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "resources/views/partials/topmenu.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "resources/views/partials/topbar.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								660,
+								660
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "resources/views/layouts/app.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2234,
+								2182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 870.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/home/wasiflaeeq/Desktop/cf/app/Libraries/Cfhost.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2180,
+								2180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 440.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								170,
+								170
+							]
+						],
+						"settings":
+						{
+							"auto_name": "curl https://api.cloudflare.com/host-gw.html \\",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/run/user/1000/doc/f762c26f/CompileScript.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 556,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								556,
+								556
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/run/user/1000/doc/5225d894/mh-cache.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/run/user/1000/doc/a8740009/CompileScript.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 649,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								565,
+								565
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/run/user/1000/doc/3a4579fc/av.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 787,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/home/wasiflaeeq/Desktop/google oauth",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 99,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/home/wasiflaeeq/Desktop/cf/vendor/cloudflare/sdk/src/Endpoints/Zones.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9773,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192,
+								192
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "public/css/custom.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17601,
+						"regions":
+						{
+							"col_0000004C":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										13303,
+										13321
+									]
+								],
+								"scope": "col_0000004C"
+							},
+							"col_0000004C_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_0000004C_circle.png",
+								"regions":
+								[
+									[
+										13275,
+										13275
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_00000054":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										10859,
+										10875
+									],
+									[
+										10918,
+										10934
+									],
+									[
+										10972,
+										10988
+									]
+								],
+								"scope": "col_00000054"
+							},
+							"col_00000054_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00000054_circle.png",
+								"regions":
+								[
+									[
+										10813,
+										10813
+									],
+									[
+										10877,
+										10877
+									],
+									[
+										10936,
+										10936
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_000000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										4987,
+										4991
+									],
+									[
+										10781,
+										10786
+									],
+									[
+										11112,
+										11117
+									],
+									[
+										11696,
+										11701
+									],
+									[
+										14588,
+										14593
+									]
+								],
+								"scope": "col_000000FF"
+							},
+							"col_000000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+								"regions":
+								[
+									[
+										4976,
+										4976
+									],
+									[
+										10758,
+										10758
+									],
+									[
+										11089,
+										11089
+									],
+									[
+										11674,
+										11674
+									],
+									[
+										14566,
+										14566
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_00A65AFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2805,
+										2812
+									],
+									[
+										3155,
+										3162
+									],
+									[
+										3178,
+										3185
+									]
+								],
+								"scope": "col_00A65AFF"
+							},
+							"col_00A65AFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00A65AFF_circle.png",
+								"regions":
+								[
+									[
+										2689,
+										2689
+									],
+									[
+										3092,
+										3092
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_195075FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										5872,
+										5879
+									]
+								],
+								"scope": "col_195075FF"
+							},
+							"col_195075FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_195075FF_circle.png",
+								"regions":
+								[
+									[
+										5850,
+										5850
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_2182C7FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										10011,
+										10018
+									],
+									[
+										14614,
+										14621
+									],
+									[
+										16570,
+										16577
+									]
+								],
+								"scope": "col_2182C7FF"
+							},
+							"col_2182C7FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_2182C7FF_circle.png",
+								"regions":
+								[
+									[
+										9989,
+										9989
+									],
+									[
+										14596,
+										14596
+									],
+									[
+										16548,
+										16548
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_2373A8FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										5806,
+										5813
+									]
+								],
+								"scope": "col_2373A8FF"
+							},
+							"col_2373A8FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_2373A8FF_circle.png",
+								"regions":
+								[
+									[
+										5784,
+										5784
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_26262CFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										10032,
+										10039
+									],
+									[
+										11222,
+										11229
+									],
+									[
+										11504,
+										11511
+									],
+									[
+										12296,
+										12303
+									],
+									[
+										12432,
+										12439
+									]
+								],
+								"scope": "col_26262CFF"
+							},
+							"col_26262CFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_26262CFF_circle.png",
+								"regions":
+								[
+									[
+										10020,
+										10020
+									],
+									[
+										11200,
+										11200
+									],
+									[
+										11493,
+										11493
+									],
+									[
+										12275,
+										12275
+									],
+									[
+										12421,
+										12421
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_2985C2FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2496,
+										2503
+									],
+									[
+										5350,
+										5357
+									]
+								],
+								"scope": "col_2985C2FF"
+							},
+							"col_2985C2FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_2985C2FF_circle.png",
+								"regions":
+								[
+									[
+										2474,
+										2474
+									],
+									[
+										5339,
+										5339
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_2E3E4EFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										3428,
+										3435
+									],
+									[
+										4220,
+										4227
+									],
+									[
+										4327,
+										4334
+									],
+									[
+										7998,
+										8005
+									],
+									[
+										17505,
+										17512
+									]
+								],
+								"scope": "col_2E3E4EFF"
+							},
+							"col_2E3E4EFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_2E3E4EFF_circle.png",
+								"regions":
+								[
+									[
+										3412,
+										3412
+									],
+									[
+										4198,
+										4198
+									],
+									[
+										4311,
+										4311
+									],
+									[
+										7984,
+										7984
+									],
+									[
+										17487,
+										17487
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_2E96DBFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1873,
+										1880
+									],
+									[
+										2121,
+										2128
+									],
+									[
+										2364,
+										2371
+									],
+									[
+										5455,
+										5462
+									],
+									[
+										7440,
+										7447
+									]
+								],
+								"scope": "col_2E96DBFF"
+							},
+							"col_2E96DBFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_2E96DBFF_circle.png",
+								"regions":
+								[
+									[
+										1844,
+										1844
+									],
+									[
+										2099,
+										2099
+									],
+									[
+										2342,
+										2342
+									],
+									[
+										5439,
+										5439
+									],
+									[
+										7414,
+										7414
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_428BCAFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										10429,
+										10436
+									],
+									[
+										10464,
+										10471
+									]
+								],
+								"scope": "col_428BCAFF"
+							},
+							"col_428BCAFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_428BCAFF_circle.png",
+								"regions":
+								[
+									[
+										10400,
+										10400
+									],
+									[
+										10438,
+										10438
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_444444FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										15380,
+										15387
+									],
+									[
+										15454,
+										15461
+									],
+									[
+										15604,
+										15611
+									],
+									[
+										15873,
+										15880
+									]
+								],
+								"scope": "col_444444FF"
+							},
+							"col_444444FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_444444FF_circle.png",
+								"regions":
+								[
+									[
+										15369,
+										15369
+									],
+									[
+										15432,
+										15432
+									],
+									[
+										15597,
+										15597
+									],
+									[
+										15846,
+										15846
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_555555FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6436,
+										6440
+									]
+								],
+								"scope": "col_555555FF"
+							},
+							"col_555555FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_555555FF_circle.png",
+								"regions":
+								[
+									[
+										6425,
+										6425
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_5A4080FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										12933,
+										12940
+									]
+								],
+								"scope": "col_5A4080FF"
+							},
+							"col_5A4080FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_5A4080FF_circle.png",
+								"regions":
+								[
+									[
+										12915,
+										12915
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_666666FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										17067,
+										17071
+									]
+								],
+								"scope": "col_666666FF"
+							},
+							"col_666666FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_666666FF_circle.png",
+								"regions":
+								[
+									[
+										16950,
+										16950
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_777777FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										10203,
+										10207
+									]
+								],
+								"scope": "col_777777FF"
+							},
+							"col_777777FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_777777FF_circle.png",
+								"regions":
+								[
+									[
+										10192,
+										10192
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_808080FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										16326,
+										16330
+									]
+								],
+								"scope": "col_808080FF"
+							},
+							"col_808080FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_808080FF_circle.png",
+								"regions":
+								[
+									[
+										16315,
+										16315
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_999999FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										13807,
+										13811
+									]
+								],
+								"scope": "col_999999FF"
+							},
+							"col_999999FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_999999FF_circle.png",
+								"regions":
+								[
+									[
+										13796,
+										13796
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_AAAAAAFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										12604,
+										12608
+									],
+									[
+										14228,
+										14232
+									]
+								],
+								"scope": "col_AAAAAAFF"
+							},
+							"col_AAAAAAFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_AAAAAAFF_circle.png",
+								"regions":
+								[
+									[
+										12588,
+										12588
+									],
+									[
+										14220,
+										14220
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_CCCCCCFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										4254,
+										4258
+									],
+									[
+										11867,
+										11871
+									],
+									[
+										11898,
+										11902
+									]
+								],
+								"scope": "col_CCCCCCFF"
+							},
+							"col_CCCCCCFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_CCCCCCFF_circle.png",
+								"regions":
+								[
+									[
+										4243,
+										4243
+									],
+									[
+										11843,
+										11843
+									],
+									[
+										11873,
+										11873
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_DD4B39FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2667,
+										2674
+									]
+								],
+								"scope": "col_DD4B39FF"
+							},
+							"col_DD4B39FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_DD4B39FF_circle.png",
+								"regions":
+								[
+									[
+										2543,
+										2543
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_DDDDDDFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1597,
+										1601
+									],
+									[
+										2062,
+										2066
+									],
+									[
+										3913,
+										3917
+									],
+									[
+										4780,
+										4784
+									],
+									[
+										6978,
+										6982
+									],
+									[
+										7008,
+										7012
+									]
+								],
+								"scope": "col_DDDDDDFF"
+							},
+							"col_DDDDDDFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_DDDDDDFF_circle.png",
+								"regions":
+								[
+									[
+										1568,
+										1568
+									],
+									[
+										2040,
+										2040
+									],
+									[
+										3902,
+										3902
+									],
+									[
+										4769,
+										4769
+									],
+									[
+										6953,
+										6953
+									],
+									[
+										6984,
+										6984
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_E6E6E6E5":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										17122,
+										17143
+									]
+								],
+								"scope": "col_E6E6E6E5"
+							},
+							"col_E6E6E6E5_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_E6E6E6E5_circle.png",
+								"regions":
+								[
+									[
+										16950,
+										16950
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_ECF0F5FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										11484,
+										11491
+									]
+								],
+								"scope": "col_ECF0F5FF"
+							},
+							"col_ECF0F5FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_ECF0F5FF_circle.png",
+								"regions":
+								[
+									[
+										11468,
+										11468
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_EEEEEEFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										13643,
+										13647
+									],
+									[
+										14158,
+										14162
+									]
+								],
+								"scope": "col_EEEEEEFF"
+							},
+							"col_EEEEEEFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_EEEEEEFF_circle.png",
+								"regions":
+								[
+									[
+										13621,
+										13621
+									],
+									[
+										14139,
+										14139
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F0F0F0FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										4049,
+										4056
+									]
+								],
+								"scope": "col_F0F0F0FF"
+							},
+							"col_F0F0F0FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F0F0F0FF_circle.png",
+								"regions":
+								[
+									[
+										4027,
+										4027
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F39C12FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2944,
+										2951
+									]
+								],
+								"scope": "col_F39C12FF"
+							},
+							"col_F39C12FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F39C12FF_circle.png",
+								"regions":
+								[
+									[
+										2827,
+										2827
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F5F5F5FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7182,
+										7189
+									]
+								],
+								"scope": "col_F5F5F5FF"
+							},
+							"col_F5F5F5FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F5F5F5FF_circle.png",
+								"regions":
+								[
+									[
+										7160,
+										7160
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFE5":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										17083,
+										17104
+									]
+								],
+								"scope": "col_FFFFFFE5"
+							},
+							"col_FFFFFFE5_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFE5_circle.png",
+								"regions":
+								[
+									[
+										16950,
+										16950
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2336,
+										2340
+									],
+									[
+										2468,
+										2472
+									],
+									[
+										3025,
+										3029
+									],
+									[
+										3084,
+										3088
+									],
+									[
+										3131,
+										3135
+									],
+									[
+										3690,
+										3694
+									],
+									[
+										3853,
+										3857
+									],
+									[
+										4407,
+										4411
+									],
+									[
+										4577,
+										4581
+									],
+									[
+										4813,
+										4817
+									],
+									[
+										5475,
+										5479
+									],
+									[
+										7353,
+										7357
+									],
+									[
+										8230,
+										8234
+									],
+									[
+										11193,
+										11198
+									],
+									[
+										11714,
+										11718
+									],
+									[
+										11763,
+										11770
+									],
+									[
+										12243,
+										12247
+									],
+									[
+										12267,
+										12271
+									],
+									[
+										12457,
+										12461
+									],
+									[
+										12978,
+										12982
+									],
+									[
+										13244,
+										13248
+									],
+									[
+										14398,
+										14405
+									],
+									[
+										14742,
+										14747
+									],
+									[
+										14946,
+										14951
+									],
+									[
+										15090,
+										15095
+									],
+									[
+										15362,
+										15367
+									],
+									[
+										15473,
+										15478
+									],
+									[
+										17521,
+										17525
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										2325,
+										2325
+									],
+									[
+										2457,
+										2457
+									],
+									[
+										3014,
+										3014
+									],
+									[
+										3053,
+										3053
+									],
+									[
+										3092,
+										3092
+									],
+									[
+										3674,
+										3674
+									],
+									[
+										3842,
+										3842
+									],
+									[
+										4396,
+										4396
+									],
+									[
+										4566,
+										4566
+									],
+									[
+										4797,
+										4797
+									],
+									[
+										5464,
+										5464
+									],
+									[
+										7331,
+										7331
+									],
+									[
+										8221,
+										8221
+									],
+									[
+										11182,
+										11182
+									],
+									[
+										11703,
+										11703
+									],
+									[
+										11741,
+										11741
+									],
+									[
+										12232,
+										12232
+									],
+									[
+										12249,
+										12249
+									],
+									[
+										12441,
+										12441
+									],
+									[
+										12967,
+										12967
+									],
+									[
+										13228,
+										13228
+									],
+									[
+										14386,
+										14386
+									],
+									[
+										14732,
+										14732
+									],
+									[
+										14904,
+										14904
+									],
+									[
+										15072,
+										15072
+									],
+									[
+										15340,
+										15340
+									],
+									[
+										15463,
+										15463
+									],
+									[
+										17514,
+										17514
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								9954,
+								9954
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7989.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "resources/views/admin/spfirewall/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 58914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "public/v3/css/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10006,
+						"regions":
+						{
+							"col_00000019":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										5567,
+										5585
+									],
+									[
+										5617,
+										5635
+									],
+									[
+										5662,
+										5680
+									]
+								],
+								"scope": "col_00000019"
+							},
+							"col_00000019_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00000019_circle.png",
+								"regions":
+								[
+									[
+										5546,
+										5546
+									],
+									[
+										5599,
+										5599
+									],
+									[
+										5649,
+										5649
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_163D57FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										3087,
+										3094
+									]
+								],
+								"scope": "col_163D57FF"
+							},
+							"col_163D57FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_163D57FF_circle.png",
+								"regions":
+								[
+									[
+										3068,
+										3068
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_2C7CB0FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2549,
+										2556
+									],
+									[
+										5981,
+										5998
+									],
+									[
+										6878,
+										6895
+									]
+								],
+								"scope": "col_2C7CB0FF"
+							},
+							"col_2C7CB0FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_2C7CB0FF_circle.png",
+								"regions":
+								[
+									[
+										2536,
+										2536
+									],
+									[
+										5908,
+										5908
+									],
+									[
+										6855,
+										6855
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_2E3E4EFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										8050,
+										8057
+									]
+								],
+								"scope": "col_2E3E4EFF"
+							},
+							"col_2E3E4EFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_2E3E4EFF_circle.png",
+								"regions":
+								[
+									[
+										8036,
+										8036
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_36393AFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										5431,
+										5446
+									]
+								],
+								"scope": "col_36393AFF"
+							},
+							"col_36393AFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_36393AFF_circle.png",
+								"regions":
+								[
+									[
+										5423,
+										5423
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_555555FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2972,
+										2976
+									],
+									[
+										3259,
+										3263
+									],
+									[
+										5075,
+										5079
+									]
+								],
+								"scope": "col_555555FF"
+							},
+							"col_555555FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_555555FF_circle.png",
+								"regions":
+								[
+									[
+										2964,
+										2964
+									],
+									[
+										3251,
+										3251
+									],
+									[
+										5067,
+										5067
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_76C4E2FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										3596,
+										3614
+									],
+									[
+										3687,
+										3705
+									],
+									[
+										3774,
+										3792
+									],
+									[
+										3859,
+										3877
+									],
+									[
+										3945,
+										3963
+									],
+									[
+										4310,
+										4328
+									],
+									[
+										4400,
+										4416
+									],
+									[
+										4491,
+										4507
+									],
+									[
+										4574,
+										4590
+									],
+									[
+										4655,
+										4671
+									],
+									[
+										4737,
+										4753
+									]
+								],
+								"scope": "col_76C4E2FF"
+							},
+							"col_76C4E2FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_76C4E2FF_circle.png",
+								"regions":
+								[
+									[
+										3502,
+										3502
+									],
+									[
+										3618,
+										3618
+									],
+									[
+										3708,
+										3708
+									],
+									[
+										3795,
+										3795
+									],
+									[
+										3880,
+										3880
+									],
+									[
+										4291,
+										4291
+									],
+									[
+										4330,
+										4330
+									],
+									[
+										4442,
+										4442
+									],
+									[
+										4528,
+										4528
+									],
+									[
+										4611,
+										4611
+									],
+									[
+										4692,
+										4692
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_777777FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										689,
+										693
+									]
+								],
+								"scope": "col_777777FF"
+							},
+							"col_777777FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_777777FF_circle.png",
+								"regions":
+								[
+									[
+										681,
+										681
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_79C698FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										5886,
+										5904
+									]
+								],
+								"scope": "col_79C698FF"
+							},
+							"col_79C698FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_79C698FF_circle.png",
+								"regions":
+								[
+									[
+										5815,
+										5815
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_8082854C":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1421,
+										1445
+									],
+									[
+										1478,
+										1502
+									],
+									[
+										1530,
+										1554
+									]
+								],
+								"scope": "col_8082854C"
+							},
+							"col_8082854C_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_8082854C_circle.png",
+								"regions":
+								[
+									[
+										1400,
+										1400
+									],
+									[
+										1460,
+										1460
+									],
+									[
+										1517,
+										1517
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_8176B5FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										3572,
+										3590
+									],
+									[
+										3667,
+										3685
+									],
+									[
+										3754,
+										3772
+									],
+									[
+										3839,
+										3857
+									],
+									[
+										3925,
+										3943
+									]
+								],
+								"scope": "col_8176B5FF"
+							},
+							"col_8176B5FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_8176B5FF_circle.png",
+								"regions":
+								[
+									[
+										3502,
+										3502
+									],
+									[
+										3618,
+										3618
+									],
+									[
+										3708,
+										3708
+									],
+									[
+										3795,
+										3795
+									],
+									[
+										3880,
+										3880
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_85CBA8FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										4422,
+										4438
+									],
+									[
+										4509,
+										4525
+									],
+									[
+										4592,
+										4608
+									],
+									[
+										4673,
+										4689
+									],
+									[
+										4755,
+										4771
+									]
+								],
+								"scope": "col_85CBA8FF"
+							},
+							"col_85CBA8FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_85CBA8FF_circle.png",
+								"regions":
+								[
+									[
+										4330,
+										4330
+									],
+									[
+										4442,
+										4442
+									],
+									[
+										4528,
+										4528
+									],
+									[
+										4611,
+										4611
+									],
+									[
+										4692,
+										4692
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_8888887F":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										4090,
+										4114
+									],
+									[
+										4151,
+										4175
+									],
+									[
+										4207,
+										4231
+									]
+								],
+								"scope": "col_8888887F"
+							},
+							"col_8888887F_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_8888887F_circle.png",
+								"regions":
+								[
+									[
+										4069,
+										4069
+									],
+									[
+										4133,
+										4133
+									],
+									[
+										4194,
+										4194
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_B7BBBDFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										5508,
+										5526
+									]
+								],
+								"scope": "col_B7BBBDFF"
+							},
+							"col_B7BBBDFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_B7BBBDFF_circle.png",
+								"regions":
+								[
+									[
+										5493,
+										5493
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_D5D7D8FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1969,
+										1976
+									],
+									[
+										5383,
+										5401
+									]
+								],
+								"scope": "col_D5D7D8FF"
+							},
+							"col_D5D7D8FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_D5D7D8FF_circle.png",
+								"regions":
+								[
+									[
+										1950,
+										1950
+									],
+									[
+										5364,
+										5364
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_DFDFDFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6575,
+										6582
+									]
+								],
+								"scope": "col_DFDFDFFF"
+							},
+							"col_DFDFDFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_DFDFDFFF_circle.png",
+								"regions":
+								[
+									[
+										6550,
+										6550
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_E6E6E6FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										282,
+										289
+									],
+									[
+										3493,
+										3500
+									],
+									[
+										5155,
+										5162
+									]
+								],
+								"scope": "col_E6E6E6FF"
+							},
+							"col_E6E6E6FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_E6E6E6FF_circle.png",
+								"regions":
+								[
+									[
+										263,
+										263
+									],
+									[
+										3474,
+										3474
+									],
+									[
+										5129,
+										5129
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_EAEBEBFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										840,
+										858
+									]
+								],
+								"scope": "col_EAEBEBFF"
+							},
+							"col_EAEBEBFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_EAEBEBFF_circle.png",
+								"regions":
+								[
+									[
+										814,
+										814
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_ED6161FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										6079,
+										6095
+									]
+								],
+								"scope": "col_ED6161FF"
+							},
+							"col_ED6161FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_ED6161FF_circle.png",
+								"regions":
+								[
+									[
+										6002,
+										6002
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F0F0F0FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7083,
+										7090
+									]
+								],
+								"scope": "col_F0F0F0FF"
+							},
+							"col_F0F0F0FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F0F0F0FF_circle.png",
+								"regions":
+								[
+									[
+										7064,
+										7064
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F38020FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										770,
+										787
+									]
+								],
+								"scope": "col_F38020FF"
+							},
+							"col_F38020FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F38020FF_circle.png",
+								"regions":
+								[
+									[
+										747,
+										747
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F7F7F8FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										339,
+										357
+									],
+									[
+										1237,
+										1244
+									],
+									[
+										6772,
+										6779
+									]
+								],
+								"scope": "col_F7F7F8FF"
+							},
+							"col_F7F7F8FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F7F7F8FF_circle.png",
+								"regions":
+								[
+									[
+										320,
+										320
+									],
+									[
+										1218,
+										1218
+									],
+									[
+										6753,
+										6753
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										654,
+										658
+									],
+									[
+										808,
+										812
+									],
+									[
+										2175,
+										2179
+									],
+									[
+										2566,
+										2570
+									],
+									[
+										3356,
+										3360
+									],
+									[
+										5282,
+										5286
+									],
+									[
+										6204,
+										6208
+									],
+									[
+										6916,
+										6920
+									],
+									[
+										8282,
+										8286
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										635,
+										635
+									],
+									[
+										789,
+										789
+									],
+									[
+										2156,
+										2156
+									],
+									[
+										2558,
+										2558
+									],
+									[
+										3348,
+										3348
+									],
+									[
+										5263,
+										5263
+									],
+									[
+										6185,
+										6185
+									],
+									[
+										6897,
+										6897
+									],
+									[
+										8273,
+										8273
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								10006,
+								10006
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7717.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "resources/views/admin/firewall/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 28786,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "resources/views/admin/dns/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10176,
+								10176
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4652.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8875,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										228,
+										240
+									],
+									[
+										561,
+										573
+									],
+									[
+										972,
+										984
+									],
+									[
+										1366,
+										1378
+									],
+									[
+										1789,
+										1801
+									],
+									[
+										2118,
+										2130
+									],
+									[
+										2450,
+										2462
+									],
+									[
+										2795,
+										2807
+									],
+									[
+										3141,
+										3153
+									],
+									[
+										3547,
+										3559
+									],
+									[
+										3879,
+										3891
+									],
+									[
+										4292,
+										4304
+									],
+									[
+										4716,
+										4728
+									],
+									[
+										5148,
+										5160
+									],
+									[
+										5557,
+										5569
+									],
+									[
+										5887,
+										5899
+									],
+									[
+										6223,
+										6235
+									],
+									[
+										6559,
+										6571
+									],
+									[
+										6966,
+										6978
+									],
+									[
+										7371,
+										7383
+									],
+									[
+										7768,
+										7780
+									],
+									[
+										8249,
+										8295
+									],
+									[
+										8439,
+										8485
+									],
+									[
+										8767,
+										8773
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								8769,
+								8769
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3258.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "resources/views/admin/analytics/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 45800,
+						"regions":
+						{
+							"col_0000007F":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										45025,
+										45043
+									]
+								],
+								"scope": "col_0000007F"
+							},
+							"col_0000007F_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_0000007F_circle.png",
+								"regions":
+								[
+									[
+										44998,
+										44998
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_000000D8":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										42556,
+										42575
+									]
+								],
+								"scope": "col_000000D8"
+							},
+							"col_000000D8_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000D8_circle.png",
+								"regions":
+								[
+									[
+										42532,
+										42532
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_000000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										39272,
+										39276
+									],
+									[
+										40682,
+										40689
+									],
+									[
+										43698,
+										43705
+									],
+									[
+										43860,
+										43867
+									],
+									[
+										44037,
+										44044
+									]
+								],
+								"scope": "col_000000FF"
+							},
+							"col_000000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+								"regions":
+								[
+									[
+										39236,
+										39236
+									],
+									[
+										40645,
+										40645
+									],
+									[
+										43680,
+										43680
+									],
+									[
+										43836,
+										43836
+									],
+									[
+										44013,
+										44013
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_000003FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										44003,
+										44010
+									]
+								],
+								"scope": "col_000003FF"
+							},
+							"col_000003FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000003FF_circle.png",
+								"regions":
+								[
+									[
+										43981,
+										43981
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_12A6DAFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										33922,
+										33929
+									],
+									[
+										34218,
+										34225
+									]
+								],
+								"scope": "col_12A6DAFF"
+							},
+							"col_12A6DAFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_12A6DAFF_circle.png",
+								"regions":
+								[
+									[
+										33900,
+										33900
+									],
+									[
+										34196,
+										34196
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_1F77B4B2":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										32285,
+										32307
+									],
+									[
+										32336,
+										32358
+									]
+								],
+								"scope": "col_1F77B4B2"
+							},
+							"col_1F77B4B2_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_1F77B4B2_circle.png",
+								"regions":
+								[
+									[
+										32263,
+										32263
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_1F77B4FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										32472,
+										32489
+									]
+								],
+								"scope": "col_1F77B4FF"
+							},
+							"col_1F77B4FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_1F77B4FF_circle.png",
+								"regions":
+								[
+									[
+										32444,
+										32444
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_222D32FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										33932,
+										33939
+									],
+									[
+										34228,
+										34235
+									]
+								],
+								"scope": "col_222D32FF"
+							},
+							"col_222D32FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_222D32FF_circle.png",
+								"regions":
+								[
+									[
+										33900,
+										33900
+									],
+									[
+										34196,
+										34196
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_2B6A93FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										40258,
+										40265
+									],
+									[
+										40635,
+										40642
+									]
+								],
+								"scope": "col_2B6A93FF"
+							},
+							"col_2B6A93FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_2B6A93FF_circle.png",
+								"regions":
+								[
+									[
+										40227,
+										40227
+									],
+									[
+										40599,
+										40599
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_2B908FFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										41357,
+										41364
+									]
+								],
+								"scope": "col_2B908FFF"
+							},
+							"col_2B908FFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_2B908FFF_circle.png",
+								"regions":
+								[
+									[
+										41344,
+										41344
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_333333FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										42776,
+										42780
+									],
+									[
+										44240,
+										44244
+									]
+								],
+								"scope": "col_333333FF"
+							},
+							"col_333333FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_333333FF_circle.png",
+								"regions":
+								[
+									[
+										42752,
+										42752
+									],
+									[
+										44213,
+										44213
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_404043FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										44910,
+										44917
+									],
+									[
+										44945,
+										44952
+									]
+								],
+								"scope": "col_404043FF"
+							},
+							"col_404043FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_404043FF_circle.png",
+								"regions":
+								[
+									[
+										44881,
+										44881
+									],
+									[
+										44920,
+										44920
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_505053FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										42060,
+										42067
+									],
+									[
+										42368,
+										42375
+									],
+									[
+										42840,
+										42847
+									],
+									[
+										43558,
+										43565
+									],
+									[
+										43670,
+										43677
+									],
+									[
+										44183,
+										44190
+									],
+									[
+										44637,
+										44644
+									],
+									[
+										45063,
+										45070
+									]
+								],
+								"scope": "col_505053FF"
+							},
+							"col_505053FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_505053FF_circle.png",
+								"regions":
+								[
+									[
+										42033,
+										42033
+									],
+									[
+										42341,
+										42341
+									],
+									[
+										42819,
+										42819
+									],
+									[
+										43539,
+										43539
+									],
+									[
+										43654,
+										43654
+									],
+									[
+										44155,
+										44155
+									],
+									[
+										44612,
+										44612
+									],
+									[
+										45046,
+										45046
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_55BF3BFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										41440,
+										41447
+									]
+								],
+								"scope": "col_55BF3BFF"
+							},
+							"col_55BF3BFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_55BF3BFF_circle.png",
+								"regions":
+								[
+									[
+										41433,
+										41433
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_606063FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										41625,
+										41632
+									],
+									[
+										43137,
+										43144
+									],
+									[
+										44809,
+										44816
+									],
+									[
+										44845,
+										44852
+									]
+								],
+								"scope": "col_606063FF"
+							},
+							"col_606063FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_606063FF_circle.png",
+								"regions":
+								[
+									[
+										41601,
+										41601
+									],
+									[
+										43120,
+										43120
+									],
+									[
+										44779,
+										44779
+									],
+									[
+										44819,
+										44819
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_666666FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										43206,
+										43210
+									],
+									[
+										44401,
+										44405
+									]
+								],
+								"scope": "col_666666FF"
+							},
+							"col_666666FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_666666FF_circle.png",
+								"regions":
+								[
+									[
+										43189,
+										43189
+									],
+									[
+										44374,
+										44374
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_707073FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										41912,
+										41919
+									],
+									[
+										42023,
+										42030
+									],
+									[
+										42088,
+										42095
+									],
+									[
+										42220,
+										42227
+									],
+									[
+										42331,
+										42338
+									],
+									[
+										42396,
+										42403
+									],
+									[
+										43271,
+										43278
+									],
+									[
+										43826,
+										43833
+									]
+								],
+								"scope": "col_707073FF"
+							},
+							"col_707073FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_707073FF_circle.png",
+								"regions":
+								[
+									[
+										41890,
+										41890
+									],
+									[
+										42005,
+										42005
+									],
+									[
+										42070,
+										42070
+									],
+									[
+										42198,
+										42198
+									],
+									[
+										42313,
+										42313
+									],
+									[
+										42378,
+										42378
+									],
+									[
+										43254,
+										43254
+									],
+									[
+										43804,
+										43804
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_7798BFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										41390,
+										41397
+									],
+									[
+										41462,
+										41469
+									],
+									[
+										44548,
+										44555
+									]
+								],
+								"scope": "col_7798BFFF"
+							},
+							"col_7798BFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_7798BFFF_circle.png",
+								"regions":
+								[
+									[
+										41344,
+										41344
+									],
+									[
+										41433,
+										41433
+									],
+									[
+										44531,
+										44531
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_7CFC00FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										18701,
+										18708
+									]
+								],
+								"scope": "col_7CFC00FF"
+							},
+							"col_7CFC00FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_7CFC00FF_circle.png",
+								"regions":
+								[
+									[
+										18438,
+										18438
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_808083FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										44704,
+										44711
+									],
+									[
+										44737,
+										44744
+									]
+								],
+								"scope": "col_808083FF"
+							},
+							"col_808083FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_808083FF_circle.png",
+								"regions":
+								[
+									[
+										44677,
+										44677
+									],
+									[
+										44714,
+										44714
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_90EE7EFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										41368,
+										41375
+									]
+								],
+								"scope": "col_90EE7EFF"
+							},
+							"col_90EE7EFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_90EE7EFF_circle.png",
+								"regions":
+								[
+									[
+										41344,
+										41344
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_98B2C0FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										40217,
+										40224
+									]
+								],
+								"scope": "col_98B2C0FF"
+							},
+							"col_98B2C0FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_98B2C0FF_circle.png",
+								"regions":
+								[
+									[
+										40186,
+										40186
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_9BCA3EFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										29969,
+										29986
+									]
+								],
+								"scope": "col_9BCA3EFF"
+							},
+							"col_9BCA3EFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_9BCA3EFF_circle.png",
+								"regions":
+								[
+									[
+										29794,
+										29794
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_A0A0A3FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										42151,
+										42158
+									],
+									[
+										42479,
+										42486
+									]
+								],
+								"scope": "col_A0A0A3FF"
+							},
+							"col_A0A0A3FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_A0A0A3FF_circle.png",
+								"regions":
+								[
+									[
+										42131,
+										42131
+									],
+									[
+										42459,
+										42459
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_A30000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										38900,
+										38907
+									]
+								],
+								"scope": "col_A30000FF"
+							},
+							"col_A30000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_A30000FF_circle.png",
+								"regions":
+								[
+									[
+										38869,
+										38869
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_A6C7EDFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										44579,
+										44586
+									]
+								],
+								"scope": "col_A6C7EDFF"
+							},
+							"col_A6C7EDFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_A6C7EDFF_circle.png",
+								"regions":
+								[
+									[
+										44558,
+										44558
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_AAAAAAFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										44431,
+										44435
+									]
+								],
+								"scope": "col_AAAAAAFF"
+							},
+							"col_AAAAAAFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_AAAAAAFF_circle.png",
+								"regions":
+								[
+									[
+										44408,
+										44408
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_AAEEEEFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										41401,
+										41408
+									],
+									[
+										41473,
+										41480
+									]
+								],
+								"scope": "col_AAEEEEFF"
+							},
+							"col_AAEEEEFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_AAEEEEFF_circle.png",
+								"regions":
+								[
+									[
+										41344,
+										41344
+									],
+									[
+										41433,
+										41433
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_AEC7E8B2":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										32310,
+										32333
+									]
+								],
+								"scope": "col_AEC7E8B2"
+							},
+							"col_AEC7E8B2_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_AEC7E8B2_circle.png",
+								"regions":
+								[
+									[
+										32263,
+										32263
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_B0B0B3FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										42712,
+										42719
+									],
+									[
+										45094,
+										45101
+									]
+								],
+								"scope": "col_B0B0B3FF"
+							},
+							"col_B0B0B3FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_B0B0B3FF_circle.png",
+								"regions":
+								[
+									[
+										42692,
+										42692
+									],
+									[
+										45073,
+										45073
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_C0C0C0FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										44264,
+										44270
+									],
+									[
+										44318,
+										44324
+									],
+									[
+										45119,
+										45126
+									]
+								],
+								"scope": "col_C0C0C0FF"
+							},
+							"col_C0C0C0FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_C0C0C0FF_circle.png",
+								"regions":
+								[
+									[
+										44247,
+										44247
+									],
+									[
+										44301,
+										44301
+									],
+									[
+										45104,
+										45104
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_CAD2D3FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										41520,
+										41527
+									]
+								],
+								"scope": "col_CAD2D3FF"
+							},
+							"col_CAD2D3FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_CAD2D3FF_circle.png",
+								"regions":
+								[
+									[
+										41496,
+										41496
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_CCCCCCFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										43746,
+										43750
+									],
+									[
+										44467,
+										44471
+									],
+									[
+										44772,
+										44776
+									]
+								],
+								"scope": "col_CCCCCCFF"
+							},
+							"col_CCCCCCFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_CCCCCCFF_circle.png",
+								"regions":
+								[
+									[
+										43726,
+										43726
+									],
+									[
+										44446,
+										44446
+									],
+									[
+										44747,
+										44747
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_DDDDDDFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										43511,
+										43518
+									]
+								],
+								"scope": "col_DDDDDDFF"
+							},
+							"col_DDDDDDFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_DDDDDDFF_circle.png",
+								"regions":
+								[
+									[
+										43487,
+										43487
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_DF5353FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										41451,
+										41458
+									]
+								],
+								"scope": "col_DF5353FF"
+							},
+							"col_DF5353FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_DF5353FF_circle.png",
+								"regions":
+								[
+									[
+										41433,
+										41433
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_E0E0E3FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										41684,
+										41691
+									],
+									[
+										41818,
+										41825
+									],
+									[
+										41976,
+										41983
+									],
+									[
+										42284,
+										42291
+									],
+									[
+										43021,
+										43028
+									]
+								],
+								"scope": "col_E0E0E3FF"
+							},
+							"col_E0E0E3FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_E0E0E3FF_circle.png",
+								"regions":
+								[
+									[
+										41667,
+										41667
+									],
+									[
+										41801,
+										41801
+									],
+									[
+										41956,
+										41956
+									],
+									[
+										42264,
+										42264
+									],
+									[
+										43004,
+										43004
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_EEAAEEFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										41423,
+										41430
+									]
+								],
+								"scope": "col_EEAAEEFF"
+							},
+							"col_EEAAEEFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_EEAAEEFF_circle.png",
+								"regions":
+								[
+									[
+										41344,
+										41344
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_EEEEEEFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										17468,
+										17472
+									],
+									[
+										18724,
+										18728
+									],
+									[
+										30002,
+										30006
+									]
+								],
+								"scope": "col_EEEEEEFF"
+							},
+							"col_EEEEEEFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_EEEEEEFF_circle.png",
+								"regions":
+								[
+									[
+										17263,
+										17263
+									],
+									[
+										18438,
+										18438
+									],
+									[
+										29794,
+										29794
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F0F0F0FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										42610,
+										42617
+									]
+								],
+								"scope": "col_F0F0F0FF"
+							},
+							"col_F0F0F0FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F0F0F0FF_circle.png",
+								"regions":
+								[
+									[
+										42593,
+										42593
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F0F0F3FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										43358,
+										43365
+									],
+									[
+										43423,
+										43430
+									],
+									[
+										45152,
+										45159
+									]
+								],
+								"scope": "col_F0F0F3FF"
+							},
+							"col_F0F0F3FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F0F0F3FF_circle.png",
+								"regions":
+								[
+									[
+										43341,
+										43341
+									],
+									[
+										43406,
+										43406
+									],
+									[
+										45129,
+										45129
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F45B5BFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										41379,
+										41386
+									]
+								],
+								"scope": "col_F45B5BFF"
+							},
+							"col_F45B5BFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F45B5BFF_circle.png",
+								"regions":
+								[
+									[
+										41344,
+										41344
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FC564EFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										38859,
+										38866
+									]
+								],
+								"scope": "col_FC564EFF"
+							},
+							"col_FC564EFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FC564EFF_circle.png",
+								"regions":
+								[
+									[
+										38828,
+										38828
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FF0066FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										41412,
+										41419
+									]
+								],
+								"scope": "col_FF0066FF"
+							},
+							"col_FF0066FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FF0066FF_circle.png",
+								"regions":
+								[
+									[
+										41344,
+										41344
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FF4500FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										17445,
+										17452
+									]
+								],
+								"scope": "col_FF4500FF"
+							},
+							"col_FF4500FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FF4500FF_circle.png",
+								"regions":
+								[
+									[
+										17263,
+										17263
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFF19":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										44491,
+										44512
+									]
+								],
+								"scope": "col_FFFFFF19"
+							},
+							"col_FFFFFF19_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFF19_circle.png",
+								"regions":
+								[
+									[
+										44474,
+										44474
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFF4C":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										45177,
+										45198
+									]
+								],
+								"scope": "col_FFFFFF4C"
+							},
+							"col_FFFFFF4C_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFF4C_circle.png",
+								"regions":
+								[
+									[
+										45162,
+										45162
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										42900,
+										42905
+									],
+									[
+										42951,
+										42956
+									],
+									[
+										43080,
+										43084
+									],
+									[
+										43920,
+										43925
+									],
+									[
+										44097,
+										44102
+									],
+									[
+										44874,
+										44878
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										42879,
+										42879
+									],
+									[
+										42934,
+										42934
+									],
+									[
+										43063,
+										43063
+									],
+									[
+										43894,
+										43894
+									],
+									[
+										44071,
+										44071
+									],
+									[
+										44855,
+										44855
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								26373,
+								26373
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13038.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 56.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bd.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"custom.css",
+				"public/css/custom.css"
+			],
+			[
+				"head",
+				"resources/views/partials/header.blade.php"
+			],
+			[
+				"layout.blade",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"topbar",
+				"resources/views/partials/topbar.blade.php"
+			],
+			[
+				"topmenu",
+				"resources/views/partials/topmenu.blade.php"
+			],
+			[
+				"app.min.",
+				"public/adminlte/js/app.min.js"
+			],
+			[
+				"firewallcontr",
+				"app/Http/Controllers/Admin/FirewallController.php"
+			],
+			[
+				"rweb",
+				"routes/web.php"
+			],
+			[
+				"zoneshow",
+				"resources/views/admin/zones/show.blade.php"
+			],
+			[
+				"zoneindex",
+				"resources/views/admin/zones/index.blade.php"
+			],
+			[
+				"performance",
+				"resources/views/admin/zones/performance.blade.php"
+			],
+			[
+				"network",
+				"resources/views/admin/zones/network.blade.php"
+			],
+			[
+				"stylecs",
+				"public/v3/css/styles.css"
+			],
+			[
+				"dnsindex",
+				"resources/views/admin/dns/index.blade.php"
+			],
+			[
+				"pagerulindex",
+				"resources/views/admin/pagerules/index.blade.php"
+			],
+			[
+				"pagerul",
+				"app/PageRule.php"
+			],
+			[
+				"javascr",
+				"resources/views/partials/javascripts.blade.php"
+			],
+			[
+				"styles",
+				"public/v3/css/styles.css"
+			],
+			[
+				"firewallindex",
+				"resources/views/admin/firewall/index.blade.php"
+			],
+			[
+				"header",
+				"resources/views/partials/header.blade.php"
+			],
+			[
+				"javasc",
+				"resources/views/partials/javascripts.blade.php"
+			],
+			[
+				"stylesc.ss",
+				"public/v3/css/styles.css"
+			],
+			[
+				"topmen",
+				"resources/views/partials/topmenu.blade.php"
+			],
+			[
+				"analyticsindex",
+				"resources/views/admin/analytics/index.blade.php"
+			],
+			[
+				"caching",
+				"resources/views/admin/zones/caching.blade.php"
+			],
+			[
+				"zonesshow",
+				"resources/views/admin/zones/show.blade.php"
+			],
+			[
+				"crypto",
+				"resources/views/admin/zones/crypto.blade.php"
+			],
+			[
+				"v3css",
+				"public/v3/css/styles.css"
+			],
+			[
+				"adminltestle.css",
+				"public/adminlte/css/AdminLTE.css"
+			],
+			[
+				"firewall.blade",
+				"resources/views/admin/firewall/index.blade.php"
+			],
+			[
+				"analytics",
+				"resources/views/admin/analytics/index.blade.php"
+			],
+			[
+				"pagerules.bla",
+				"resources/views/admin/pagerules/index.blade.php"
+			],
+			[
+				"resourcedns",
+				"resources/views/admin/dns/index.blade.php"
+			],
+			[
+				"endpointszon",
+				"vendor/cloudflare/sdk/src/Endpoints/Zones.php"
+			],
+			[
+				"viewsperfor",
+				"resources/views/admin/zones/performance.blade.php"
+			],
+			[
+				"layoutapp",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"home.b",
+				"resources/views/home.blade.php"
+			],
+			[
+				"viewhead",
+				"resources/views/partials/head.blade.php"
+			],
+			[
+				"partiajava",
+				"resources/views/partials/javascripts.blade.php"
+			],
+			[
+				"partihead",
+				"resources/views/partials/head.blade.php"
+			],
+			[
+				"layoutauth",
+				"resources/views/layouts/auth.blade.php"
+			],
+			[
+				"authlogin",
+				"resources/views/auth/login.blade.php"
+			],
+			[
+				"zonecontr",
+				"app/Http/Controllers/Admin/ZoneController.php"
+			],
+			[
+				"kernel",
+				"app/Console/Kernel.php"
+			],
+			[
+				"jobsdns",
+				"app/Jobs/UpdateDnsRecord.php"
+			],
+			[
+				"endpointdns",
+				"vendor/cloudflare/sdk/src/Endpoints/DNS.php"
+			],
+			[
+				"endpointzo",
+				"vendor/cloudflare/sdk/src/Endpoints/Zones.php"
+			],
+			[
+				"zonecon",
+				"app/Http/Controllers/Admin/ZoneController.php"
+			],
+			[
+				"laravel",
+				"storage/logs/laravel.log"
+			],
+			[
+				"rapi",
+				"routes/api.php"
+			],
+			[
+				"rwev",
+				"vendor/symfony/routing/Tests/Fixtures/with_define_path_variable.php"
+			],
+			[
+				"brandingcon",
+				"app/Http/Controllers/Admin/BrandingController.php"
+			],
+			[
+				"topme",
+				"resources/views/partials/topmenu.blade.php"
+			],
+			[
+				"trashed.blade",
+				"resources/views/admin/zones/trashed.blade.php"
+			],
+			[
+				"reseller.blade",
+				"resources/views/admin/users/resellers.blade.php"
+			],
+			[
+				"els",
+				"app/ElsAnalytics.php"
+			],
+			[
+				"elscontrol",
+				"app/Http/Controllers/Admin/ELSController.php"
+			],
+			[
+				"handler",
+				"app/Exceptions/Handler.php"
+			],
+			[
+				"srcexceptio/RequestException",
+				"vendor/guzzlehttp/guzzle/src/Exception/RequestException.php"
+			],
+			[
+				"librarcf",
+				"app/Libraries/Cfhost.php"
+			],
+			[
+				"viewapp",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"viewzoneindex",
+				"resources/views/admin/zones/index.blade.php"
+			],
+			[
+				"viewzonecreate",
+				"resources/views/admin/zones/create.blade.php"
+			],
+			[
+				"vendorzones",
+				"vendor/cloudflare/sdk/src/Endpoints/Zones.php"
+			],
+			[
+				"cfacccont",
+				"app/Http/Controllers/Admin/CfaccountController.php"
+			],
+			[
+				"custom",
+				"public/css/custom.css"
+			],
+			[
+				"vendorclouduser",
+				"vendor/cloudflare/sdk/src/Endpoints/User.php"
+			],
+			[
+				"apppackage",
+				"app/Package.php"
+			],
+			[
+				"appuser",
+				"app/User.php"
+			],
+			[
+				"usercontr",
+				"app/Http/Controllers/Admin/UsersController.php"
+			],
+			[
+				"packagecontr",
+				"app/Http/Controllers/Admin/PackageController.php"
+			],
+			[
+				"viewzonecrea",
+				"resources/views/admin/zones/create.blade.php"
+			],
+			[
+				"lara",
+				"storage/logs/laravel.log"
+			],
+			[
+				"viewszonecrea",
+				"resources/views/admin/zones/create.blade.php"
+			],
+			[
+				"routing/ro",
+				"vendor/symfony/routing/Router.php"
+			],
+			[
+				"exceptionhandle",
+				"app/Exceptions/Handler.php"
+			],
+			[
+				"larave",
+				"storage/logs/laravel.log"
+			],
+			[
+				"routeser",
+				"app/Providers/RouteServiceProvider.php"
+			],
+			[
+				"appser",
+				"app/Providers/AppServiceProvider.php"
+			],
+			[
+				"authser",
+				"app/Providers/AuthServiceProvider.php"
+			],
+			[
+				"laravel.l",
+				"storage/logs/laravel.log"
+			],
+			[
+				"homecontr",
+				"app/Http/Controllers/HomeController.php"
+			],
+			[
+				"fetchels",
+				"app/Jobs/FetchELSAnalytics.php"
+			],
+			[
+				"appkenr",
+				"app/Console/Kernel.php"
+			],
+			[
+				"anaylt",
+				"app/Http/Controllers/Admin/AnalyticsController.php"
+			],
+			[
+				"fetchfir",
+				"app/Jobs/FetchFirewallRules.php"
+			],
+			[
+				"authserv",
+				"app/Providers/AuthServiceProvider.php"
+			],
+			[
+				"RouteServiceProvider",
+				"app/Providers/RouteServiceProvider.php"
+			],
+			[
+				"configauth",
+				"config/auth.php"
+			],
+			[
+				"apizone",
+				"app/Http/Controllers/API/ZonsController.php"
+			],
+			[
+				"apizonec",
+				"app/Http/Controllers/Admin/ZoneController.php"
+			],
+			[
+				"routapi",
+				"routes/api.php"
+			],
+			[
+				"rouweb",
+				"routes/web.php"
+			],
+			[
+				"crypto.blade",
+				"resources/views/admin/zones/crypto.blade.php"
+			],
+			[
+				"login.bla",
+				"resources/views/auth/login.blade.php"
+			],
+			[
+				"spimport",
+				"resources/views/admin/spaccounts/import.blade.php"
+			],
+			[
+				"app.blade",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"app.min",
+				"public/adminlte/js/app.min.js"
+			],
+			[
+				"wafdetail",
+				"resources/views/admin/firewall/wafGroupDetails.blade.php"
+			],
+			[
+				"seo.",
+				"resources/views/admin/zones/seo.blade.php"
+			],
+			[
+				"originblade",
+				"resources/views/admin/zones/origin.blade.php"
+			],
+			[
+				"contenprot",
+				"resources/views/admin/zones/contentProtection.blade.php"
+			],
+			[
+				"zonnetwo",
+				"resources/views/admin/zones/network.blade.php"
+			],
+			[
+				"zonspca",
+				"resources/views/admin/zones/spcaching.blade.php"
+			],
+			[
+				"zoncache",
+				"resources/views/admin/zones/caching.blade.php"
+			],
+			[
+				"spperf",
+				"resources/views/admin/zones/spperformance.blade.php"
+			],
+			[
+				"zonperf",
+				"resources/views/admin/zones/performance.blade.php"
+			],
+			[
+				"speed",
+				"node_modules/node-forge/tests/aes-speed.js"
+			],
+			[
+				"spfirindex",
+				"resources/views/admin/spfirewall/index.blade.php"
+			],
+			[
+				"firewaindex",
+				"resources/views/admin/firewall/index.blade.php"
+			],
+			[
+				"zonecrypto",
+				"resources/views/admin/zones/crypto.blade.php"
+			],
+			[
+				"analytiindex",
+				"resources/views/admin/analytics/index.blade.php"
+			],
+			[
+				"partialhead",
+				"resources/views/partials/head.blade.php"
+			],
+			[
+				"viewhome",
+				"resources/views/home.blade.php"
+			],
+			[
+				"admlte",
+				"public/adminlte/css/AdminLTE.css"
+			],
+			[
+				"viewsidebar",
+				"resources/views/partials/sidebar.blade.php"
+			],
+			[
+				"spcac",
+				"resources/views/admin/zones/spcaching.blade.php"
+			],
+			[
+				"zonespperf",
+				"resources/views/admin/zones/spperformance.blade.php"
+			],
+			[
+				"spfireindex",
+				"resources/views/admin/spfirewall/index.blade.php"
+			],
+			[
+				"spanaindex",
+				"resources/views/admin/spanalytics/index.blade.php"
+			],
+			[
+				"analytindex",
+				"resources/views/admin/analytics/index.blade.php"
+			],
+			[
+				"zonspshow",
+				"resources/views/admin/zones/spshow.blade.php"
+			],
+			[
+				"pagrulindex",
+				"resources/views/admin/pagerules/index.blade.php"
+			],
+			[
+				"contentpro",
+				"resources/views/admin/zones/contentProtection.blade.php"
+			],
+			[
+				"network.b",
+				"resources/views/admin/zones/network.blade.php"
+			],
+			[
+				"zonecac",
+				"resources/views/admin/zones/caching.blade.php"
+			],
+			[
+				"zonepero",
+				"resources/views/admin/zones/performance.blade.php"
+			],
+			[
+				"zonecrypt",
+				"resources/views/admin/zones/crypto.blade.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 426.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
