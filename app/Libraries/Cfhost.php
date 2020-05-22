@@ -46,6 +46,7 @@ define('ENABLE_CLOBBER_UNIQUE_ID', TRUE);
 // For API access, specify your host_key:
 // define('HOST_KEY',         '1199be00ce2078a7a52e8fb57ddaabae');
 define('HOST_KEY',         '3483a41c9f169200e9f38698586a4d1b');
+// define('HOST_KEY',         'e3ee4df34b3be5e414b176fce72544c9f7df7');
 
 
 class Cfhost

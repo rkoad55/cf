@@ -24,8 +24,10 @@ class DnsController extends Controller
 
 
         $zone=Zone::where('name',$zone)->first();
-
-        FetchDns::dispatch($zone,true)->onConnection('sync');
+        //dd($zone);
+       // FetchDns::dispatch($zone,true)->onConnection('sync');
+        FetchDns::dispatch($zone,true);
+       // dd('ok');
         $records=$zone->Dns->sortBy("type");
         // dd($zone->user->id);
         if(!(auth()->user()->id == $zone->user->id OR \App\User::find(auth()->user()->id)->owner == $zone->user->id OR auth()->user()->id == 1))
@@ -298,7 +300,6 @@ class DnsController extends Controller
 
         $data=$request->all();
         $dns=Dns::find($data['id']);
-
 
          if(isset($dns->zone))
         {

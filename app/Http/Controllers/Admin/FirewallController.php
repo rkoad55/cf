@@ -16,14 +16,13 @@ use App\Jobs\UpdateFirewallRule;
 use App\Jobs\UpdateUaRule;
 use App\Jobs\UpdateWAFRule;
 use App\UaRule;
-use App\FwRule;
+
 use App\wafRule;
 use App\Jobs\FetchFirewallRules;
-use App\Jobs\FetchFWRules;
 use App\Jobs\FetchUaRules;
 use App\Jobs\UpdateSPWAF;
 use App\Jobs\DeleteFirewallRule;
-use App\Jobs\DeleteFWRule;
+
 use App\Jobs\DeleteUaRule;
 class FirewallController extends Controller
 {
@@ -39,11 +38,6 @@ class FirewallController extends Controller
 
 
         $zone=Zone::where('name',$zone)->first();
-
-
-
-        
-        // die;
 
         if(!(auth()->user()->id == $zone->user->id OR auth()->user()->id == $zone->user->owner OR auth()->user()->id == 1))
     {
@@ -70,20 +64,15 @@ class FirewallController extends Controller
         if($zone->cfaccount_id!=0)
         {   
 
-
-            // Uncomment all these 3
-             FetchFirewallRules::dispatch($zone)->onConnection('sync');
-            FetchUaRules::dispatch($zone)->onConnection('sync');
-            FetchFWRules::dispatch($zone)->onConnection('sync');
+            // FetchFirewallRules::dispatch($zone)->onConnection('sync');
+            FetchFirewallRules::dispatch($zone);
+           
+            FetchUaRules::dispatch($zone);
+           // dd('ok');
             $rules=$zone->FirewallRule;
-            $fwRules=$zone->fwRule;
-            // echo "sd";
-            // dd($fwRules->count());
-
-
 
             $uaRules=$zone->UaRule;
-            return view('admin.firewall.index', compact('records','zone','zoneSetting','rules','uaRules','wafPackages','events','fwRules'));    
+            return view('admin.firewall.index', compact('records','zone','zoneSetting','rules','uaRules','wafPackages','events'));    
         }
         else
         {
@@ -103,92 +92,6 @@ class FirewallController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-
-    public function addFwRule(Request $request)
-    {
-        $zone_id = $request->input('zid');
-        $rule_id = !empty($request->rule_id) ? $request->rule_id : 0;
-
-
-        $zone = Zone::find($zone_id);
-        if (!(auth()->user()->id == $zone->user->id or auth()->user()->id == $zone->user->owner or auth()->user()->id == 1)) {
-            return abort(401);
-        }
-
-        $rulename = $request->input('rulename');
-        $expression = $request->input('expression');
-        $ruleaction = $request->input('ruleaction');
-        
-        
-
-        $key     = new \Cloudflare\API\Auth\APIKey($zone->cfaccount->email, $zone->cfaccount->user_api_key);
-        $adapter = new \Cloudflare\API\Adapter\Guzzle($key);
-        $FW   = new \Cloudflare\API\Endpoints\FW($adapter);
-
-        if($rule_id==0)
-        {
-            $res=$FW->addFilter($zone->zone_id,$expression,$rulename);    
-        }
-        else
-        {
-            //fetch already existing rule from db and get the filter id. we will use new expression to update the rule.
-            $fwRule=fwRule::find($rule_id);
-            // $res[0]= new \stdClass();
-            // $res[0]->id=$fwRule->fwfilter->record_id;
-            $res[0]=$FW->updateFilter($zone->zone_id,$expression,$rulename,$fwRule->fwfilter->record_id);
-            // var_dump($res);
-            // die;
-        }
-       
-
-       if(isset($res[0]))
-       {
-
-            $filter_id=$res[0]->id;
-
-            $rule_id = !empty($request->rule_id) ? $request->rule_id : 0;
-
-            if($rule_id > 0) {
-                //$fwRule = FwRule::find($rule_id);
-                $res=$FW->updateRule($zone->zone_id,$fwRule->record_id,$ruleaction,$rulename,false,$filter_id,$expression);
-
-
-            } else {
-                $res=$FW->addRule($zone->zone_id,$filter_id,$rulename,$ruleaction);
-            }
-
-
-
-            
-
-            if(isset($res[0]))
-            {
-
-                echo "success";
-            }
-            else
-            {
-                echo $res;
-            }
-       }
-       else
-       {
-
-        echo $res;
-
-       }
-
-
-
-        
-
-      
-
-
-    
-    }
-
-
     public function createAccessRule(Request $request)
     {
         //
@@ -205,6 +108,7 @@ class FirewallController extends Controller
     
         $value=$request->input('value');
          $mode=$request->input('mode');
+$notes=$request->input('note');
 
        
         $data=[
@@ -214,6 +118,7 @@ class FirewallController extends Controller
             'mode'   =>  $mode,
             'scope'    => 'zone',
             'status' => 'active',
+		'notes' => $notes,
             'zone_id'   => $zone_id,
         ];
 
@@ -386,7 +291,7 @@ class FirewallController extends Controller
         //   echo($rule1->mode);
         //   
         
-        UpdateFirewallRule::dispatch($zone, $rule->id)->onConnection('sync');
+        UpdateFirewallRule::dispatch($zone, $rule->id);
 
         echo "Access Rule Updated";
    
@@ -592,11 +497,13 @@ public function updateWafPackage(Request $request, $zone)
     public function destroy(Request $request)
     {
         //
-         $data=$request->all();
+
+        $data=$request->all();
         $firewallRule=FirewallRule::find($data['id']);
 
         
         $zone=$firewallRule->zone;
+
         if(!(auth()->user()->id == $zone->user->id OR auth()->user()->id == $zone->user->owner OR auth()->user()->id == 1))
     {
             return abort(401);
@@ -609,42 +516,13 @@ public function updateWafPackage(Request $request, $zone)
 
             DeleteFirewallRule::dispatch($zone,$rule_id)->onConnection('sync');
 
-           // return redirect()->route('admin.firewal.index',['zone'   =>  $zone->name]);
 
-
-        
-
-
-    }
-
-
-     public function destroyFwRule($zone, $id)
-    {
-        //
-        $firewallRule=FwRule::find($id);
-
-        
-        $zone=$firewallRule->zone;
-        if(!(auth()->user()->id == $zone->user->id OR auth()->user()->id == $zone->user->owner OR auth()->user()->id == 1))
-    {
-            return abort(401);
-    }
-
-        
-
-            $rule_id=$firewallRule->record_id;
-            $firewallRule->delete();
-            // dd($rule_id);
-            DeleteFWRule::dispatch($zone,$rule_id)->onConnection('sync');
-
-            return redirect()->route('admin.firewal.index',['zone'   =>  $zone->name]);
 
 
         
 
 
     }
-
 
     public function destroyUaRule(Request $request)
     {

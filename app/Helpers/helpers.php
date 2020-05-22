@@ -39,13 +39,13 @@
        {
           $attr = date("m/d/Y h:i A", $attr);
        }
-
+       
 
        else
        {
        		$attr = date("l, hA", $attr);
        }
-
+       
     }
     return $attr;
 	}

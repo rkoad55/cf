@@ -53,7 +53,16 @@ class FetchZoneSetting implements ShouldQueue
             //$values['modified_on'] =$setting->modified_on;
             $values['editable'] = $setting->editable;
             if (!is_object($setting->value)) {
-                $values['value'] = $setting->value;
+
+                if(is_array($setting->value))
+                {
+                    $values['value'] = json_encode($setting->value);
+                }
+                else
+                {
+                    $values['value'] = $setting->value;
+                }
+               
                 ZoneSetting::updateOrCreate($check, $values);
             } else {
                 //dd($setting->value);

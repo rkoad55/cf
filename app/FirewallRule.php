@@ -13,7 +13,7 @@ class FirewallRule extends Model
    
 
 
-    public function zone()
+     public function zone()
     {
         return $this->belongsTo('App\Zone');
     }
