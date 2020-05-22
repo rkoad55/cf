@@ -1,12 +1,10 @@
-## Laravel Roles Permissions Admin - Bouncer version
+## CF Panel
 
-This is a Laravel 5.4 adminpanel starter project with roles-permissions management based on [Joseph Silber's Bouncer package](https://github.com/JosephSilber/bouncer), [AdminLTE theme](https://adminlte.io/) and [Datatables.net](https://datatables.net).
+This is a Laravel 5.8 adminpanel starter project with roles-permissions management based on [Joseph Silber's Bouncer package](https://github.com/JosephSilber/bouncer), [AdminLTE theme](https://adminlte.io/) and [Datatables.net](https://datatables.net).
 
-We've also created almost identical project based on Spatie's Laravel-permission package: [see here](https://github.com/LaravelDaily/laravel-roles-permissions-manager)
 
-Part of this project was generated automatically by [QuickAdminPanel system](https://quickadminpanel.com/).
 
-![Larancer screenshot](http://webcoderpro.com/roles-permissions-manager-bouncer.png)
+
 
 ## Usage
 
@@ -17,11 +15,8 @@ This is not a package - it's a full Laravel project that you should use as a sta
 - Run `composer install`
 - Run `php artisan key:generate`
 - Run `php artisan migrate --seed` (it has some seeded data - see below)
-- That's it: launch the main URL and login with default credentials `admin@admin.com` - `password`
 
-This boilerplate has one role (`administrator`), one ability (`users_manage`) and one administrator user.
 
-With that user you can create more roles/abilities/users, and then use them in your code, by using functionality like `Gate` or `@can`, as in default Laravel, or with help of Bouncer's package methods.
 
 ## License
 
