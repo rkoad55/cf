@@ -1,5 +1,5 @@
 <?php
-
+//CF
 namespace App\Jobs;
 
 use Illuminate\Bus\Queueable;
@@ -76,7 +76,7 @@ class FetchFirewallRules implements ShouldQueue
 
            
          FirewallRule::updateOrCreate($check, $rule);
-        }   
+    }   
             
 
 }

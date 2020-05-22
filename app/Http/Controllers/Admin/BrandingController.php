@@ -180,3 +180,4 @@ class BrandingController extends Controller
         ]);
     }
 }
+

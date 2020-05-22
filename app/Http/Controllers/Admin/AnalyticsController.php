@@ -37,8 +37,7 @@ class AnalyticsController extends Controller
         }
         else
         {
-            $minutes=43200;    
-            // $minutes=259200;    
+            $minutes=43200;
         }
 
 
@@ -72,7 +71,7 @@ class AnalyticsController extends Controller
                  $xlabel= 'day';
                   $tsFormat='Y-m-d';
             break;
-            
+
             default:
                 $timestamp = 'Last 24 Hours';
                  $xlabel= 'hour';
@@ -97,7 +96,7 @@ class AnalyticsController extends Controller
         //
         ////->where('timestamp',">=",$timestamp)
         ///
-        
+
         $dataCollection=$zone->SpAnalytics->sortByDesc('timestamp');
         $statsCollection=$dataCollection->where('type','stats')->where('period',$period)->where('timestamp','>',$ts);
         $stats = $statsCollection->sortBy('timestamp')->all();
@@ -105,7 +104,7 @@ class AnalyticsController extends Controller
         $request_all = $statsCollection->sum("hit");
         $request_cached = $statsCollection->sum("cache_hit");
         $request_uncached = $statsCollection->sum("noncache_hit");
-        
+
 
 
         $bandwidth = $statsCollection->sum("size");
@@ -119,7 +118,7 @@ class AnalyticsController extends Controller
 
         // dd($status_codes);
         $filetypes = $dataCollection->where('type','filetypes')->where('period',$period)->groupBy('timestamp')->where('timestamp','>',$ts)->sortBy('timestamp')->all();
-        
+
         $parsed_status=[];
         foreach (array_reverse($status_codes) as $key=>$status_period) {
             # code...
@@ -139,7 +138,7 @@ class AnalyticsController extends Controller
                 {
                     $parsed_status[$key]['5xx']=$status['hit'];
                 }
-                
+
 
             }
         }
@@ -148,16 +147,16 @@ class AnalyticsController extends Controller
 $parsed_filetypes=[];
 
 
-    
-      
+
+
 
         foreach ($filetypes as $key=>$status_period) {
             # code...
             $parsed_filetypes[$key]['timestamp']=dateFormatting($status_period[0]['timestamp'],$xlabel);
             foreach ($status_period as $filetype) {
                 # code...
-               
-                
+
+
                 $parsed_filetypes[$key][$filetype['file_type']]=$filetype['hit'];
             }
         }
@@ -188,7 +187,7 @@ $parsed_filetypes=[];
        // die();
 
 
-        
+
 
         $latest=$zone->wafEvent->sortByDesc('ts')->first();
         if($latest)
@@ -212,11 +211,11 @@ $parsed_filetypes=[];
          $events = $zone->wafEvent->sortByDesc('ts')->where('ts','>',$tsEvent)->sortBy('ts')->groupBy(function($date) use($tsFormat) {
             return Carbon::createFromTimestamp($date->ts)->format($tsFormat);
 });;
-        
+
         $threats=array();
          foreach ($events as $key=>$event) {
              # code...
-             
+
              // dd($event);
             $threats[$key]['period']=dateFormatting(Carbon::createFromTimestamp($event->first()['ts'])->toDateString(),$xlabel);
             $threats[$key]['blocked']=$event->sum('blocked');
@@ -240,7 +239,7 @@ $parsed_filetypes=[];
                 $correction=Session::get('current_time_zone');
             }
             $start=Carbon::parse($request->input('start'),'UTC')->timestamp-$correction;
-            
+
             $end=Carbon::parse($request->input('end'),'UTC')->timestamp-$correction;
 
             // dd(dateFormatting(Carbon::now('UTC'),"logsAnalysis"));
@@ -250,8 +249,8 @@ $parsed_filetypes=[];
         }
         else
         {
-            $end=Carbon::now('UTC')->timestamp;   
-            $start=Carbon::now('UTC')->subMinutes(1440)->timestamp;  
+            $end=Carbon::now('UTC')->timestamp;
+            $start=Carbon::now('UTC')->subMinutes(1440)->timestamp;
 
             $convert=true;
 
@@ -261,14 +260,14 @@ $parsed_filetypes=[];
 
         $hosts = [
     'http://elasticsearch:ONiNeVB5NRDNo&F9@CgJAi7d@148.251.176.73:9201'       // HTTP Basic Authentication
-   
+
 ];
 
 
 // curl -XPUT http://<es node>:9200/.kibana/index-pattern/cloudflare -d '{"title" : "cloudflare",  "timeFieldName": "EdgeStartTimestamp"}'
 $client = \Elasticsearch\ClientBuilder::create()
                     ->setHosts($hosts)->build();
-  
+
 
 
  $body='{
@@ -299,7 +298,7 @@ $client = \Elasticsearch\ClientBuilder::create()
       }
     }
 ]
-    
+
 }';
 
 $params = [
@@ -309,7 +308,7 @@ $params = [
 ];
 
 
-                    $results = $client->search($params);  
+                    $results = $client->search($params);
 
 $requests=false;
 if(isset($results['hits']['hits']))
@@ -318,19 +317,119 @@ if(isset($results['hits']['hits']))
 }
 
 // dd($results);
-      
+
 
 
  // \App\User::find(1)->allow(['splogs']);
         // die("sd");
-      
-       
+
+
         return view('admin.zones.spLogs', compact('zone', 'zoneSetting','requests','start','end','convert'));
     }
 
-    public function index($zone, Request $request)
+    public function getAnalyticsJson($zone, Request $request)
     {
-        
+
+      // $request->merge(['minutes' => "43200"]);
+    $array=$this->index($zone,$request,true);
+
+    $data=[];
+    foreach ($array[1] as $value) {
+      // code...
+
+      $data['datasets'][0]['data'][]=$value['visits'];
+
+    }
+
+    foreach ($array[0] as $value) {
+      // code...
+      $data['xData'][]=$value['period'];
+
+      $data['datasets'][1]['data'][]=$value['cached']+$value['uncached'];
+
+
+    }
+
+
+
+    foreach ($array[2] as $value) {
+      // code...
+      //$data['xData'][]=$value['period'];
+      $data['datasets'][2]['data'][]=floor(($value['uncached']+$value['cached']==0?0:($value['cached']/($value['cached']+$value['uncached']))*100));
+      $data['datasets'][3]['data'][]=($value['cached']+$value['uncached']);
+      $data['datasets'][4]['data'][]=(int)$value['cached'];
+
+    }
+
+
+
+    $averageValue=array_sum($data['datasets'][3]['data'])/count($data['datasets'][3]['data']);
+    $divideBy=1;
+    $unit="Bytes";
+    // dd($averageValue);
+    if($averageValue>=1024)
+    {
+      $divideBy=1024;
+      $unit="KB";
+    }
+    if($averageValue>=1048576)
+    {
+      $divideBy=1048576;
+      $unit="MB";
+    }
+
+    if($averageValue>=1073741824)
+    {
+      $divideBy=1073741824;
+      $unit="GB";
+    }
+
+    foreach ($data['datasets'][3]['data'] as $key=>$val) {
+      // code...
+
+        $data['datasets'][3]['data'][$key]=round($val/$divideBy,2);
+
+    }
+
+    foreach ($data['datasets'][4]['data'] as $key=>$val) {
+      // code...
+
+        $data['datasets'][4]['data'][$key]=round($val/$divideBy,2);
+
+    }
+
+    $data['datasets'][0]['name']="";
+    $data['datasets'][0]['unit']="Visits";
+    $data['datasets'][0]['type']="area";
+    $data['datasets'][0]['html']="<div>Unique Visitors</div><div>".array_sum($data['datasets'][0]['data'])."</div>";
+
+    $data['datasets'][1]['name']="";
+    $data['datasets'][1]['unit']="Requests";
+    $data['datasets'][1]['type']="area";
+    $data['datasets'][1]['html']="<div>Total Requests</div><div>".array_sum($data['datasets'][1]['data'])."</div>";
+
+    $data['datasets'][2]['name']="";
+    $data['datasets'][2]['unit']="%";
+    $data['datasets'][2]['type']="area";
+    $data['datasets'][2]['html']="<div>Percent Cached</div><div>".round(array_sum($data['datasets'][2]['data'])/count($data['datasets'][2]['data']))."%</div>";
+
+    $data['datasets'][3]['name']="";
+    $data['datasets'][3]['unit']=$unit;
+    $data['datasets'][3]['type']="area";
+    $data['datasets'][3]['html']="<div>Total Data Served</div><div>".array_sum($data['datasets'][3]['data'])." ".$unit."</div>";
+
+    $data['datasets'][4]['name']="";
+    $data['datasets'][4]['unit']=$unit;
+    $data['datasets'][4]['type']="area";
+    $data['datasets'][4]['html']="<div>Data Cached</div><div>".array_sum($data['datasets'][4]['data'])." ".$unit."</div>";
+
+    return response()->json($data);
+    // dd($data);
+    }
+
+    public function index($zone, Request $request, $getJson=false)
+    {
+
         $zone =  $zoneObj = Zone::where('name',$zone)->first();
 
         if($zone->cfaccount_id==0)
@@ -348,7 +447,7 @@ if($request->input('minutes') !==null)
 }
 else
 {
-    $minutes=1440;    
+    $minutes=1440;
 }
 
 
@@ -377,7 +476,7 @@ else
                 $timestamp = 'Last 30 Minutes';
                 $xlabel= 'minute';
                 break;
-            
+
             default:
                 $timestamp = 'Last 24 Hours';
                 $xlabel= 'hour';
@@ -398,9 +497,11 @@ $request_cahced1=array();
 foreach ($results->timeseries as $key => $value) {
             $unqiue_array[] = $value->uniques->all;
             $bandwidth_cached_uncached[$key]['period'] = dateFormatting(date("Y-m-d H:i:s", strtotime($value->since)),$xlabel);
-            $bandwidth_cached_uncached[$key]['cached'] = number_format($value->bandwidth->cached / (1024 * 1024 * 1024) , 2);
-            $bandwidth_cached_uncached[$key]['uncached'] = number_format($value->bandwidth->uncached / (1024 * 1024 * 1024 ), 2);
+            // $bandwidth_cached_uncached[$key]['cached'] = number_format($value->bandwidth->cached / (1024 * 1024 * 1024) , 2);
+            // $bandwidth_cached_uncached[$key]['uncached'] = number_format($value->bandwidth->uncached / (1024 * 1024 * 1024 ), 2);
 
+            $bandwidth_cached_uncached[$key]['cached'] = $value->bandwidth->cached;
+            $bandwidth_cached_uncached[$key]['uncached'] = $value->bandwidth->uncached;
 
 
             $request_cahced1[$key]['x'] = "new Date(".date("Y, m, d, H, i, s", strtotime($value->since)).")";
@@ -418,7 +519,7 @@ foreach ($results->timeseries as $key => $value) {
             $unique_visitors[$key]['visits'] = $value->uniques->all;
 
             $threats[$key]['period'] = dateFormatting(date("Y-m-d H:i:s", strtotime($value->since)),$xlabel);
-            
+
             //dd();
             $status_codes[$key] =json_decode(json_encode($value->requests->http_status),true);
             $status_codes[$key]['period'] = dateFormatting(date("Y-m-d H:i:s", strtotime($value->since)),$xlabel);
@@ -482,17 +583,9 @@ foreach ($results->timeseries as $key => $value) {
                 $res[$key]['name'] = $names->$key;
             }
             }
-
-            if(isset($res))
-            {
             array_multisort($res, SORT_NUMERIC, SORT_DESC);
             $top_threats_origin = array_slice($res, 0, 5);
-            }
-            else
-            {
 
-            $top_threats_origin=[];
-            }
             foreach ($results->totals->requests->country as $key => $value) {
                 if ($key != "XX" AND $key!="T1") {
                     $top_traffic_origins[$key]['value'] = $value;
@@ -534,14 +627,14 @@ foreach ($results->timeseries as $key => $value) {
             } else {
                 $top_bots = '';
             }
-            
+
         } else {
             $top_threats_origin = '';
             $top_traffic_origins = '';
             $top_bots = '';
         }
-        
-        
+
+
         $unique_all = $results->totals->uniques->all;
         if (isset($unqiue_array)) {
             $unique_min = min($unqiue_array);
@@ -555,7 +648,7 @@ foreach ($results->timeseries as $key => $value) {
         $requests = $request_cached_uncached;
         $uniques = $unique_visitors;
         $threats_all = $results->totals->threats->all;
-       
+
        // dd($results);
         $ssl = $results->totals->requests->ssl->encrypted;
         $unencrypted_ssl = $results->totals->requests->ssl->unencrypted;
@@ -570,14 +663,14 @@ foreach ($results->timeseries as $key => $value) {
         foreach (json_decode(json_encode($top_threats),true) as $key => $value) {
             if (!empty($value))
                 $threat_country = array_keys($value, max($value));
-            else 
+            else
                 $threat_country = [0 => 0];
         }
 
         foreach (json_decode(json_encode($top_threat_type), true) as $key => $value) {
             if (!empty($value))
                 $top_threats_type = array_keys($value, max($value));
-            else 
+            else
                 $top_threats_type = [0 => 0];
         }
         $content_type = (array)$results->totals->requests->content_type;
@@ -593,7 +686,7 @@ foreach ($results->timeseries as $key => $value) {
             $content_type = $labels;
         } else
             $content_type = 0;
-        
+
         $http_status = (array)$results->totals->requests->http_status;
         if (!empty($http_status)) {
             $http_statuses[] = $results->totals->requests->http_status;
@@ -636,27 +729,27 @@ foreach ($results->timeseries as $key => $value) {
         $top_threat_type = $top_threats_type[0];
        // $data['domain_name'] = $this->session->userdata['select_domain'];
        // $timestamp = '';
-        
+
         $data['error'] = "";
 
 
 
 
-       
+
 
 
 $new_status_array=array();
 foreach ($status_codes as $key => $value) {
-    
+
     foreach ($value as $k => $v) {
         # code...
-        # 
-        $arr["k_".$k]=$v;
-        
+        #
+        $arr[$k]=$v;
+
     }
 
     $new_status_array[$key]=$arr;
-    
+
 }
 
 $status_codes=$new_status_array;
@@ -679,46 +772,23 @@ $zoneName= $zone->name;
 ///
 
 $browserTotal=0;
-$ClientRequestURI=[];
-    $ClientRequestMethod=[];
-    $ClientRequestUserAgent=[];
-    $WAFRules=[];
-    
   if($zone->els==1)
     {
 
     $elsAnalytics=$zone->ElsAnalytics->where('minutes',$minutes);
-    // var_dump($elsAnalytics);
+
     if($elsAnalytics->count()>0){
 
 
    $deviceType=unserialize($elsAnalytics->where('type','deviceType')->first()->value);
-
    $hosts=unserialize($elsAnalytics->where('type','hosts')->first()->value);
    $referers=unserialize($elsAnalytics->where('type','referers')->first()->value);
-
    $clientsIP=unserialize($elsAnalytics->where('type','clientsIP')->first()->value);
-if($elsAnalytics->where('type','ClientRequestURI')->first())
-{
    $ClientRequestURI=unserialize($elsAnalytics->where('type','ClientRequestURI')->first()->value);
-}
-
-    if($elsAnalytics->where('type','ClientRequestMethod')->first())
-    {
-
-
    $ClientRequestMethod=unserialize($elsAnalytics->where('type','ClientRequestMethod')->first()->value);
-}
-
-    if($elsAnalytics->where('type','ClientRequestUserAgent')->first()){
    $ClientRequestUserAgent=unserialize($elsAnalytics->where('type','ClientRequestUserAgent')->first()->value);
-}
-
-      if($elsAnalytics->where('type','WAFRuleID')->first())
-      {
    $WAFRules=unserialize($elsAnalytics->where('type','WAFRuleID')->first()->value);
 
-// 
    foreach ($WAFRules as $key=>$value) {
        # code...
     if ($value["key"]=="") {
@@ -726,14 +796,12 @@ if($elsAnalytics->where('type','ClientRequestURI')->first())
         unset($WAFRules[$key]);
     }
    }
-
-}
    $user=parse_user_agent();
 
 
 
             // $wafRules=$zone->wafPackage->where('id',$pid)->first()->wafGroup->where('id',$gid)->first()->wafRule;
-  
+
 $platfomTotal=0;
    foreach ($deviceType as $key => $value) {
        # code...
@@ -747,7 +815,6 @@ $platfomTotal=0;
    $platforms=$browsers=$browserOnly=[];
 
 $browserTotal=0;
-// var_dump($ClientRequestUserAgent);
    foreach ($ClientRequestUserAgent as $key => $value) {
 
         $UA=parse_user_agent($value['key']);
@@ -759,7 +826,7 @@ $browserTotal=0;
         }
         else
         {
-        
+
             if($UA['browser']==null)
             {
                 $UA['browser']="Unknown";
@@ -767,7 +834,7 @@ $browserTotal=0;
         $browserOnly[$UA['browser']]['label']=$UA['browser'];
         $browserOnly[$UA['browser']]['value']=$value['doc_count'];
         }
-       
+
         $browserTotal+=$value['doc_count'];
    }
 
@@ -790,7 +857,7 @@ $browserOnly=array_values($browserOnly);
        }
        if(isset($platforms[$UA['platform']]))
        {
-        $platforms[$UA['platform']]+=$value['doc_count']; 
+        $platforms[$UA['platform']]+=$value['doc_count'];
        }
        else
        {
@@ -799,7 +866,7 @@ $browserOnly=array_values($browserOnly);
 
    // if(isset($browserOnly[$UA['browser']]))
    //     {
-   //      $browserOnly[$UA['platform']]+=$value['doc_count']; 
+   //      $browserOnly[$UA['platform']]+=$value['doc_count'];
    //     }
    //     else
    //     {
@@ -814,21 +881,21 @@ $browserOnly=array_values($browserOnly);
 
                 if(isset($browsers[$UA['browser']][str_replace(".", "_", $UA['version'])]))
                {
-                $browsers[$UA['browser']][str_replace(".", "_", $UA['version'])]+=$value['doc_count']; 
+                $browsers[$UA['browser']][str_replace(".", "_", $UA['version'])]+=$value['doc_count'];
                }
                else
                {
                 $browsers[$UA['browser']][str_replace(".", "_", $UA['version'])]=$value['doc_count'];
                }
-                
-                // $browsers[$UA['browser']]+=$value['doc_count']; 
+
+                // $browsers[$UA['browser']]+=$value['doc_count'];
        }
        else
        {
 
          if(isset($browsers[$UA['browser']][str_replace(".", "_", $UA['version'])]))
                {
-                $browsers[$UA['browser']][str_replace(".", "_", $UA['version'])]+=$value['doc_count']; 
+                $browsers[$UA['browser']][str_replace(".", "_", $UA['version'])]+=$value['doc_count'];
                }
                else
                {
@@ -840,7 +907,7 @@ $browserOnly=array_values($browserOnly);
 
 
        }
-       
+
 
    }
 
@@ -876,11 +943,42 @@ else
 
 
 
-
+if($getJson)
+{
+  // echo "string";
+  // die;
+  return [$requests,$uniques,$bandwidth];
+  die;
+}
 
 
 
 //dd($records);
+// $codes['200'] = array_column($status_codes, 'k_200');
+// $codes['200'] = array_column($status_codes, 'k_200');
+// $codes['200'] = array_column($status_codes, 'k_200');
+// $codes['200'] = array_column($status_codes, 'k_200');
+// $codes['200'] = array_column($status_codes, 'k_200');
+// $codes['200'] = array_column($status_codes, 'k_200');
+// $codes['200'] = array_column($status_codes, 'k_200');
+$codes = [];
+foreach ($status_codes as $code_value) {
+  foreach ($code_value as $key => $value) {
+     $codes[$key][] = $value;
+
+   }
+}
+$status_codes = $codes;
+
+$threat_arr = [];
+foreach ($threats as $threat) {
+  foreach ($threat as $key => $value) {
+     $threat_arr[$key][] = $value;
+
+   }
+}
+$threats = $threat_arr;
+
 return view('admin.analytics.index', compact('zone','records','requests','request_all','request_cached','request_uncached','bandwidth','bandwidth_saved','bandwidth_cached','bandwidth_all','xlabel','timestamp','unique_all','unique_max','unique_min','uniques','threats','threats_all','top_threats_country','top_threat_type','top_threats_origin','top_traffic_origins','top_bots','servers_needed','ssl_graph','ssl','unencrypted_ssl','content_type','threats_mitigated','minutes','status_codes','zoneObj','zoneName','deviceType','hosts','referers','clientsIP','ClientRequestURI','ClientRequestMethod','ClientRequestUserAgent','browsers','browserOnly','browserTotal','platfomTotal','platforms','WAFRules'));
     }
 
@@ -1074,7 +1172,7 @@ $current_time->addMinutes($minutes);
 
 $hosts = [
     'http://elasticsearch:ONiNeVB5NRDNo&F9@CgJAi7d@148.251.176.73:9201'       // HTTP Basic Authentication
-   
+
 ];
 
 
@@ -1171,7 +1269,7 @@ return view('admin.analytics.ipDetails', compact('deviceType'));
 
 
     public function countries($zone,$minutes) {
-        
+
 
          $zone=Zone::where('name',$zone)->first();
 
@@ -1197,13 +1295,13 @@ return view('admin.analytics.ipDetails', compact('deviceType'));
         //$tsEvent = Carbon::now('UTC')->subMinutes(14444)->timestamp;
     // echo($latest);
 
-    
+
          $events = $zone->wafEvent->sortByDesc('ts')->where('ts','>',$tsEvent)->sortBy('ts')->groupBy('country');
-       
+
         $threats=array();
          foreach ($events as $key=>$event) {
              # code...
-             
+
              // dd($event);
             $threats[$key]['name']=$event->first()->country;
             $threats[$key]['code']=array_search($threats[$key]['name'], (array)$names);
@@ -1229,15 +1327,15 @@ return view('admin.analytics.ipDetails', compact('deviceType'));
         // if (empty($parameters['time_on_xaxis']))
         //     $parameters['time_on_xaxis'] = "hour";
         // $results = $this->cloudflare_api->dashboard(array('since' => $parameters['since'] , 'until' => null, 'zone_id' => $user_id, 'email' => $this->session->userdata('user_cloudflare_api_email'), 'auth_key' => $this->session->userdata('user_cloudflare_api_key')));
-        // 
-        // 
+        //
+        //
 
 
         if (empty ($results)) {
             echo json_encode(false);
             exit;
         }
-        
+
 
         $threats_country[] = $results->totals->threats->country;
         foreach (json_decode(json_encode($threats_country), true) as $key => $value) {
@@ -1262,7 +1360,7 @@ return view('admin.analytics.ipDetails', compact('deviceType'));
     }
 
     public function traffic($zone,$minutes) {
-        
+
 
          $zone=Zone::where('name',$zone)->first();
 
@@ -1300,12 +1398,12 @@ return view('admin.analytics.ipDetails', compact('deviceType'));
 
 
         foreach ($country_index as $key => $value) {
-            
+
             $country[$key]['code'] = $value;
             $country[$key]['value'] = $results->totals->requests->country->$value;
             if ($value != "XX"  )
                 $country[$key]['name'] = $names->$value;
-        
+
         }
 
         if($country==null)
@@ -1316,5 +1414,5 @@ return view('admin.analytics.ipDetails', compact('deviceType'));
         return response()->json($country);
     }
 
-    
+
 }

@@ -4,33 +4,35 @@ Route::get('/', function () { return redirect('/admin/home'); });
 Route::post('ajax/set_current_time_zone', array('as' => 'ajaxsetcurrenttimezone','uses' => 'AjaxController@setCurrentTimeZone'));
 
 // Authentication Routes...
-$this->get('login', 'Auth\LoginController@showLoginForm')->name('auth.login');
-$this->post('login', 'Auth\LoginController@login')->name('auth.login');
-$this->get('logout', 'Auth\LoginController@logout')->name('auth.logout');
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('auth.login');
+Route::post('login', 'Auth\LoginController@login')->name('auth.login');
+Route::get('logout', 'Auth\LoginController@logout')->name('auth.logout');
 
 
 
-$this->get('sso', 'Auth\SSOController@ssologin');
+Route::get('sso', 'Auth\SSOController@ssologin');
 
 
 // Change Password Routes...
-$this->get('change_password', 'Auth\ChangePasswordController@showChangePasswordForm')->name('auth.change_password');
-$this->patch('change_password', 'Auth\ChangePasswordController@changePassword')->name('auth.change_password');
+Route::get('change_password', 'Auth\ChangePasswordController@showChangePasswordForm')->name('auth.change_password');
+Route::patch('change_password', 'Auth\ChangePasswordController@changePassword')->name('auth.change_password');
 
 
 
 
 
 // Password Reset Routes...
-$this->get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('auth.password.reset');
-$this->post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('auth.password.reset');
-$this->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
-$this->post('password/reset', 'Auth\ResetPasswordController@reset')->name('auth.password.reset');
+Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('auth.password.reset');
+Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('auth.password.reset');
+Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('auth.password.reset');
 
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/home', 'HomeController@index');
 
     Route::get('/settings', 'Admin\SettingsController@index');
+    Route::get('/audit_logs', 'Admin\PanelLogController@audit_logs');
+    Route::get('{zone}/audit_logs','Admin\PanelLogController@showClientView');
     Route::resource('subUsers', 'Admin\SettingsController');
 
 
@@ -42,7 +44,8 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
     Route::resource('spaccounts', 'Admin\SpaccountController');
     Route::get('spaccounts/importZones/{spaccount}', 'Admin\SpaccountController@importZones');
     Route::put('spaccounts/importZones/doImport', 'Admin\SpaccountController@doImport');
-    
+     Route::resource('statuscake', 'Admin\StatuscakeController');
+
     Route::post('abilities_mass_destroy', ['uses' => 'Admin\AbilitiesController@massDestroy', 'as' => 'abilities.mass_destroy']);
     Route::resource('roles', 'Admin\RolesController');
     Route::post('roles_mass_destroy', ['uses' => 'Admin\RolesController@massDestroy', 'as' => 'roles.mass_destroy']);
@@ -57,7 +60,7 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
     Route::get('zones/trashed', 'Admin\ZoneController@trashedZones')->name("zones.trash");
     Route::patch('zones/restore', 'Admin\ZoneController@restore')->name("zones.restore");
 
-    
+
     Route::resource('zones', 'Admin\ZoneController');
 
 
@@ -77,8 +80,10 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
     Route::get('{zone}/network', 'Admin\ZoneController@network');
     Route::get('{zone}/pagerules', 'Admin\ZoneController@pageRules')->name('pagerules');
 Route::get('{zone}/loadBalancers', 'Admin\ZoneController@loadBalancers')->name('loadBalancers');
-    
+
     Route::put('{zone}/addPageRule','Admin\ZoneController@addPageRule');
+    Route::put('{zone}/addFwRule','Admin\FirewallController@addFwRule');
+    
 
     Route::post('{zone}/addSSL','Admin\ZoneController@addSSL');
     Route::put('{zone}/addSSL','Admin\ZoneController@addSSL');
@@ -93,6 +98,7 @@ Route::get('{zone}/loadBalancers', 'Admin\ZoneController@loadBalancers')->name('
     Route::patch('{zone}/sortPageRule','Admin\ZoneController@sortPageRule');
 
     Route::patch('{zone}/pageRuleStatus','Admin\ZoneController@pageRuleStatus');
+    Route::patch('{zone}/fwRuleStatus','Admin\ZoneController@fwRuleStatus');
 
      Route::patch('{zone}/uaRuleStatus','Admin\FirewallController@uaRuleStatus');
     Route::delete('{zone}/pagerules/delete','Admin\ZoneController@destroyPageRule');
@@ -132,14 +138,18 @@ Route::get('{zone}/loadBalancers', 'Admin\ZoneController@loadBalancers')->name('
 
     Route::get('{zone}/dns','Admin\DnsController@index')->name('dns');
     Route::get('{zone}/analytics','Admin\AnalyticsController@index');
+    Route::get('{zone}/getAnalyticsJson','Admin\AnalyticsController@getAnalyticsJson')->name('analytics.json');;
 
      Route::get('{zone}/logs','Admin\AnalyticsController@spLogs');
      Route::get('{zone}/spanalytics','Admin\SpAnalyticsController@index');
 
     Route::post('{zone}/analytics','Admin\AnalyticsController@index');
       Route::post('{zone}/spanalytics','Admin\SpAnalyticsController@index');
-     Route::get('{zone}/firewall','Admin\FirewallController@index');
-    Route::delete('{zone}/rule/delete','Admin\FirewallController@destroy');
+     Route::get('{zone}/firewall','Admin\FirewallController@index')->name('firewal.index');
+    Route::delete('{zone}/rule/delete','Admin\FirewallController@destroy')->name('firewal.rule.destroy');
+
+    Route::delete('{zone}/fwrule/delete/{id}','Admin\FirewallController@destroyFwRule')->name('firewall.fwrule.destroy');
+
 
     Route::delete('{zone}/uaRule/delete','Admin\FirewallController@destroyUaRule');
 
@@ -152,6 +162,8 @@ Route::get('{zone}/loadBalancers', 'Admin\ZoneController@loadBalancers')->name('
     Route::put('{zone}/updateWafPackage','Admin\FirewallController@updateWafPackage');
 
     Route::put('{zone}/updateSetting','Admin\ZoneController@updateSetting');
+    Route::put('{zone}/updateSettingByName','Admin\ZoneController@updateSettingByName');
+
     Route::PATCH('{zone}/customActions','Admin\ZoneController@customActions');
     Route::put('{zone}/dns/update','Admin\DnsController@update');
     Route::delete('dns/destroy','Admin\DnsController@destroy')->name('dns.delete');
@@ -167,7 +179,7 @@ Route::get('{zone}/loadBalancers', 'Admin\ZoneController@loadBalancers')->name('
 
 Route::get('branding', 'Admin\BrandingController@showBrandingForm')->name('branding');
 Route::patch('branding', 'Admin\BrandingController@updateBranding')->name('branding');
- 
+
  Route::get('token', 'Admin\BrandingController@showTokens')->name('token');
  Route::get('token/create', 'Admin\BrandingController@createToken')->name('token.create');
  Route::post('token/store', 'Admin\BrandingController@storeToken')->name('token.store');
@@ -190,7 +202,7 @@ Route::get('els/{zone}/clientview', 'Admin\ELSController@showClientView')->name(
 Route::post('els/{zone}/clientview', 'Admin\ELSController@showClientView');
 Route::post('els/{zone}', 'Admin\ELSController@show');
 
-// Packages 
+// Packages
 // Route::resource('packages','Admin\PackageController');
 Route::resource('packages', 'Admin\PackageController');
 

@@ -78,6 +78,11 @@ class Zone extends Model
         return $this->hasMany('App\UaRule');
     }
 
+    public function fwRule()
+    {
+        return $this->hasMany('App\FwRule');
+    }
+
 
     public function wafPackage()
     {

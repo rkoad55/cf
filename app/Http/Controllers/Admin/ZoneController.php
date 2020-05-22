@@ -36,6 +36,8 @@ use App\Jobs\stackPath\FetchWAFRules;
 use App\Jobs\stackPath\UpdateWAFRule;
 use App\Jobs\stackPath\FetchELSLogs;
 use App\Jobs\UpdatePageRule;
+use App\Jobs\UpdateFwRule;
+
 use App\Jobs\UpdateSetting;
 use App\Jobs\UpdateSpSetting;
 use App\Package;
@@ -50,6 +52,7 @@ use App\wafGroup;
 use App\wafPackage;
 use App\Zone;
 use App\ZoneSetting;
+use App\FwRule;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
@@ -114,7 +117,7 @@ class ZoneController extends Controller
      * @param  Request $request Request Variable - We used this to get zone type
      * @return \Illuminate\Http\Response           Return View
      */
-    
+
     public function trashedZones(Request $request)
     {
         //
@@ -161,7 +164,7 @@ class ZoneController extends Controller
 
 
     /**
-     * Show Cloudflare Zone Creation View 
+     * Show Cloudflare Zone Creation View
      * @return \Illuminate\Http\Response Return CF Create View
      */
     public function create()
@@ -179,10 +182,10 @@ class ZoneController extends Controller
         return view('admin.zones.create', compact('users', 'cfaccounts', 'packages'));
     }
 
-    
+
     /**
      * Store CF Domain
-     * @param  Request $request 
+     * @param  Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -252,7 +255,7 @@ class ZoneController extends Controller
             // $params["resolve_to"]           = $arg4;
             // $params["subdomains"]           = $arg5;
             $res=Cfhost::request("zone_set",$user_key,$request->name,$resolveTo.".".$request->name,"www");
-             
+
              if(isset($res->err_code))
              {
                 if($res->err_code==208)
@@ -261,20 +264,12 @@ class ZoneController extends Controller
                     $msg="Zone is already configured using different partner. Please remove the zone from that account and then try adding it again";
                 }
             }
-
             // var_dump($res->response->forward_tos->{"www.".$res->response->zone_name});
             // die();
-            try {
-                 $msg= "Zone ".$res->response->zone_name." Added and is set to resolve to ".$res->response->resolving_to." Please add Cname for "."<b>www.".$res->response->zone_name."</b> and point it to <b>".$res->response->forward_tos->{"www.".$res->response->zone_name}."</b> ";
-                
-            } catch (\ErrorException $e) {
-                 echo($res->msg);
-                    die;
-            }
-           
-           
+            $msg= "Zone ".$res->response->zone_name." Added and is set to resolve to ".$res->response->resolving_to." Please add Cname for "."<b>www.".$res->response->zone_name."</b> and point it to <b>".$res->response->forward_tos->{"www.".$res->response->zone_name}."</b> ";
 
-          
+
+
 
            $zone_id=$zones->getZoneID($request->name);
 
@@ -283,7 +278,7 @@ class ZoneController extends Controller
                 $zone = Zone::create([
                     "name"         => $request->name,
                     "zone_id"      => $zone_id,
-                    
+
                     "status"       => 'active',
                     "type"         => 'partial',
                     "user_id"      => $request->user,
@@ -310,14 +305,14 @@ class ZoneController extends Controller
            }
 
             }
-          
+
         }
         else
         {
 
             // Execute the API command for the selected CF Account
-            
-             
+
+
             $result = $zones->addZone($request->name, true);
 
             //var_dump($zr);
@@ -352,11 +347,11 @@ class ZoneController extends Controller
 
     }
 
-    
+
 
     /**
      * Store stackPath Zone
-     * @param  Request $request 
+     * @param  Request $request
      * @return \Illuminate\Http\Response
      */
     public function spstore(Request $request)
@@ -427,18 +422,20 @@ class ZoneController extends Controller
             $request->session()->flash('status', 'Zone Created Successfully! Please update the DNS at domain registrar for ' . $request->name . " to <b>" . $result->name_servers[0] . "</b> & <b>" . $result->name_servers[1] . "</b>");
         }
 
-        
+
 
         return redirect()->route('admin.zones.index');
 
     }
 
-   
+
    /**
     * Show the Zone Overview Page
     * @param  String $zone Domain Name passed to this function
     * @return \Illuminate\Http\Response       Returns Zone Overview Page
     */
+
+
     public function show($zone, Request $request)
     {
 // dd(auth()->user()->getAbilities()->pluck('name')->toArray());
@@ -449,7 +446,7 @@ class ZoneController extends Controller
 
 
 // dd(Gate::allows('analytics'));
-        
+
         $zoneName = $zone;
         $zone     = Zone::where('name', $zone)->where('user_id', auth()->user()->id)->first();
 
@@ -462,7 +459,7 @@ class ZoneController extends Controller
 
             //Loop through all matching zones, because there could be multiple zones in system under different resellers
             foreach ($zones as $zone) {
-                
+
                 if ($zone->user->owner == auth()->user()->id or $zone->user->id == auth()->user()->owner) {
                     break;
                 }
@@ -494,7 +491,7 @@ class ZoneController extends Controller
             $zoneType = "spaccount";
         }
 
-      
+
 
         if (!(auth()->user()->id == $zone->user->id or auth()->user()->owner == $zone->user->id or auth()->user()->id == $zone->user->owner or auth()->user()->id == 1)) {
 
@@ -531,7 +528,7 @@ class ZoneController extends Controller
         }
 
 
-        // 
+        //
         //Dispatch Background processes.
         if ($zoneType == "cfaccount") {
 
@@ -563,7 +560,7 @@ class ZoneController extends Controller
 
 //             $hosts = [
 //     'http://elasticsearch:ONiNeVB5NRDNo&F9@CgJAi7d@148.251.176.73:9201'       // HTTP Basic Authentication
-   
+
 // ];
 
 // // dd($body);
@@ -573,7 +570,7 @@ class ZoneController extends Controller
 //                     ->setHosts($hosts)
 //                     ->build();
 
-//  $indexParams['index']  = 'sp_'.$zone->zone_id;   
+//  $indexParams['index']  = 'sp_'.$zone->zone_id;
 //  $exists=$client->indices()->exists($indexParams);
 
 // if(!$exists)
@@ -626,7 +623,7 @@ class ZoneController extends Controller
         }
 
 
-     
+
 
         if ($zoneType == "cfaccount") {
 
@@ -640,7 +637,7 @@ class ZoneController extends Controller
             }
         } else {
 
-            
+
             if ($zone->zoneSetting->count() == 0) {
                 $zoneSetting = false;
                 FetchSpZoneSetting::dispatch($zone);
@@ -648,7 +645,7 @@ class ZoneController extends Controller
                 $zoneSetting = $zone->zoneSetting;
             }
 
-       
+
 
         }
 
@@ -663,8 +660,8 @@ class ZoneController extends Controller
 
     /**
      * Update the Enterprise Log share Enable/Disable Status
-     * @param  Request $request 
-     *   
+     * @param  Request $request
+     *
      */
     public function elsSetting(Request $request)
     {
@@ -705,7 +702,7 @@ class ZoneController extends Controller
                     echo "Error!,Could not enable ELS. Please make sure that ELS is enabled at cloudflare end as well and then try again.,warning";
                 }
 
-            
+
             }
             else
             {
@@ -715,7 +712,7 @@ class ZoneController extends Controller
 
                  $hosts = [
     'http://elasticsearch:ONiNeVB5NRDNo&F9@CgJAi7d@148.251.176.73:9201'       // HTTP Basic Authentication
-   
+
 ];
 
 // dd($body);
@@ -725,7 +722,7 @@ $client = \Elasticsearch\ClientBuilder::create()
                     ->setHosts($hosts)
                     ->build();
 
- $indexParams['index']  = 'sp_'.$zone->zone_id;   
+ $indexParams['index']  = 'sp_'.$zone->zone_id;
  $exists=$client->indices()->exists($indexParams);
 
 // $params = ['index' => 'sp_'.$zone->zone_id];
@@ -752,7 +749,7 @@ $params = [
                 'properties' => [
                     'time' => [
                         'type' => 'date'
-                        
+
                     ]
 
                 ]
@@ -770,7 +767,7 @@ $response = $client->indices()->create($params);
 
 
 // if ($internalID != "FALSE") {
-                  
+
                 // } else {
 
                 //     echo "Error!,Could not enable ELS. Please make sure that ELS is enabled at cloudflare end as well and then try again.,warning";
@@ -888,6 +885,75 @@ $response = $client->indices()->create($params);
         ]);
     }
 
+
+    public function updateSettingByName(Request $request, $zone)
+    {
+        //
+        //sleep(2);
+        $zone = Zone::where('name', $zone)->first();
+
+        if ($zone->cfaccount_id != 0) {
+            $zoneType = "cfaccount";
+        } else {
+            $zoneType = "spaccount";
+        }
+
+        if (!(auth()->user()->id == $zone->user->id or auth()->user()->owner == $zone->user->id or auth()->user()->id == $zone->{$zoneType}->reseller->id or auth()->user()->id == 1)) {
+            return abort(401);
+        }
+
+        $setId       = $request->input('id');
+        $settingName = $request->input('setting');
+        $setting     = $zone->zoneSetting->where('name', $settingName)->last();
+
+
+
+        $nameCorrections = [
+            "tls_1_2_only" => " Require Modern TLS",
+        ];
+
+        if (isset($nameCorrections[$setting->name])) {
+            $setName = $nameCorrections[$setting->name];
+        } else {
+            $setName = ucwords(str_replace("_", " ", $setting->name));
+        }
+
+        $setOld         = ucwords(str_replace("_", " ", $setting->value));
+        $setting->value = $request->input('value');
+
+      
+        $setting->save();
+        $setting1 = zoneSetting::where('name', $settingName)->first();
+        $setNew   = ucwords(str_replace("_", " ", $setting1->value));
+
+        if ($setOld == 0 and $setNew == 1) {
+            $setOld = "Off";
+            $setNew = "On";
+        } elseif ($setOld == 1 and $setNew == 0) {
+            $setOld = "On";
+            $setNew = "Off";
+        }
+
+        $data = "<b>" . $setName . "</b> changed from " . $setOld . " to <b>" . $setNew . "</b>";
+        echo $data;
+        //echo($request->input('id'));
+
+        if ($zone->cfaccount_id != 0) {
+            UpdateSetting::dispatch($zone, $setting->id);
+        } else {
+            UpdateSpSetting::dispatch($zone, $setting->id);
+        }
+
+        panelLog::create([
+            'user_id'    => auth()->user()->id,
+            'zone_id'    => $zone->id,
+            'name'       => 'Update Setting',
+            'parameters' => $setting->id,
+            'type'       => 3,
+
+            'payload'    => $data,
+        ]);
+    }
     public function customActions(Request $request, $zone)
     {
         //
@@ -945,14 +1011,9 @@ $response = $client->indices()->create($params);
             $zoneType = "spaccount";
         }
 
-        if($zone->user)
-        {
-
-
         if (!(auth()->user()->id == $zone->user->owner or auth()->user()->id == 1)) {
             return abort(401);
         }
-    }
 
         if (str_contains(URL::previous(), "trashed")) {
 
@@ -1183,8 +1244,7 @@ $response = $client->indices()->create($params);
 
         $zone = Zone::where('name', $zone)->first();
 
-        //FetchPageRules::dispatch($zone, true)->onConnection('sync');
-        FetchPageRules::dispatch($zone, true);
+        FetchPageRules::dispatch($zone, true)->onConnection('sync');
 
         if ($zone->cfaccount_id != 0) {
             $zoneType = "cfaccount";
@@ -1206,7 +1266,7 @@ $response = $client->indices()->create($params);
         }
 
     }
-    
+
     public function addPageRule(Request $request)
     {
         //
@@ -1271,7 +1331,7 @@ $response = $client->indices()->create($params);
 
     public function addSSL(Request $request)
     {
-        
+
 
         $zone_id = $request->input('zid');
 
@@ -1280,15 +1340,15 @@ $response = $client->indices()->create($params);
             return abort(401);
         }
 
-        
+
 
         AddCustomCertificate::dispatch($zone, $request->input('ssl'), $request->input('key'))->onConnection('sync');
-       
+
     }
 
     public function addWAFRule(Request $request)
     {
-        
+
 
         $zone_id = $request->input('zid');
 
@@ -1340,12 +1400,12 @@ $response = $client->indices()->create($params);
         }
 
         UpdateWAFRule::dispatch($zone, $spRule->id)->onConnection('sync');
-       
+
     }
 
     public function editWAFRule(Request $request)
     {
-      
+
 
         $zone_id = $request->input('zid');
         $rule_id = $request->input('ruleid');
@@ -1419,9 +1479,9 @@ $response = $client->indices()->create($params);
             }
 
         }
-       
+
         UpdateWAFRule::dispatch($zone, $pageRule->id, auth()->user()->id);
-        
+
     }
 
     public function editPageRule(Request $request)
@@ -1570,6 +1630,34 @@ $response = $client->indices()->create($params);
         $pageRule->save();
 
         UpdatePageRule::dispatch($zone, $pageRule->id);
+
+    }
+
+
+
+    public function fwRuleStatus(Request $request)
+    {
+
+        $data = $request->all();
+        
+        $zone = FwRule::find($data['id'])->zone;
+        // dd($zone);
+        if (!(auth()->user()->id == $zone->user->id or auth()->user()->id == $zone->user->owner or auth()->user()->id == 1)) {
+            return abort(401);
+        }
+        if ($data['value'] != 'active') {
+            $data['value'] = 'paused';
+        }
+
+
+        
+
+        $fwRule         = FwRule::where('id', $data['id'])->first();
+        $fwRule->status = $data['value'];
+
+        $fwRule->save();
+
+        UpdateFwRule::dispatch($zone, $fwRule->id)->onConnection("sync");
 
     }
 
@@ -1724,7 +1812,7 @@ $response = $client->indices()->create($params);
 
     public function network($zone)
     {
-        
+
 
         $zone = Zone::where('name', $zone)->first();
         if ($zone->cfaccount_id != 0) {
