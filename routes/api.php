@@ -35,7 +35,9 @@ Route::post('zones/{zone}/purge_cache','API\ZoneController@cfApi');
 
 Route::post('login', 'API\ZoneController@login');
 
-
+header('Access-Control-Allow-Origin:  *');
+header('Access-Control-Allow-Methods:  POST, GET, OPTIONS, PUT, DELETE');
+header('Access-Control-Allow-Headers:  Content-Type, X-Auth-Token, Origin, Authorization'); 
 
 // Route::get('zonelist','API\ZonsController@index');
 Route::resource('packages', 'API\PackageController');

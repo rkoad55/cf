@@ -127,8 +127,8 @@ class DnsController extends Controller
 
         UpdateDnsRecord::dispatch($zone,$record->id)->onConnection('sync');
 
-        echo "success";
-         //return redirect()->route('admin.dns',['zone'   =>  $zone->name]);
+       // echo "success";
+         return redirect()->route('admin.dns',['zone'   =>  $zone->name]);
     }
 
 
@@ -236,16 +236,16 @@ class DnsController extends Controller
 
             UpdateDnsRecord::dispatch($zone,$dns->id)->onConnection('sync');
             // if(DB::table('dns')
-            // ->where('id', $data['pk'])
-            // ->update([$data['name'] => $data['value']]))
-            // {
-            //      return response(json_encode(true), 200)
-            //       ->header('Content-Type', 'text/plain');
-            // }
+           //  ->where('id', $data['pk'])
+           //  ->update([$data['name'] => $data['value']]))
+           //  {
+             //     return response(json_encode(true), 200)
+               //    ->header('Content-Type', 'text/plain');
+           //  }
         
         
 
-        //echo($request->input('pk'));
+     echo($request->input('pk'));
     }
 
     public function dnsProxy(Request $request)

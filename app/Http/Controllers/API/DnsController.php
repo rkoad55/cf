@@ -159,7 +159,7 @@ class DnsController extends Controller
     public function update(Request $request,$id)
     {
         
-       
+      
     }
 
    

@@ -121,7 +121,9 @@
                         @foreach ($records as $record)
                             <tr id="record_{{ $record->id }}" data-entry-id="{{ $record->id }}">
                                 <td>{{ $record->type }}</td>
-
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <input name="_method" type="hidden" value="PUT">
+                                
                                 <td><span class="name" data-name="name" data-type="text" data-placement="right" data-title="Enter Hostname" data-pk="{{$record->id}}">
 
                                 @if($record->name!=$zone->name)
