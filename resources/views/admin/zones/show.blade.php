@@ -219,27 +219,6 @@ Highcharts.ajax({
 });
 
 
-function syncExtremest(e) {
-  var thisChart = this.chart;
-
-  if (e.trigger !== 'syncExtremes') { // Prevent feedback loop
-      Highcharts.each(Highcharts.charts, function (chart) {
-          if (chart !== thisChart) {
-              if (chart.xAxis[0].setExtremes) { // It is null while updating
-                  chart.xAxis[0].setExtremes(
-                      e.min,
-                      e.max,
-                      undefined,
-                      false,
-                      { trigger: 'syncExtremes' }
-                  );
-              }
-          }
-      });
-  }
-}
-
-
 $(document).ready(function(){
 
     $(".controls a").click(function(){
@@ -349,89 +328,6 @@ $(document).ready(function(){
     });
 });
 
-Highcharts.ajax({
-  url: '{{ route('admin.analytics.json', ['zone' => $zone->name]) }}',
-  dataType: 'text',
-  success: function (activity) {
-
-      activity = JSON.parse(activity);
-      activity.datasets.forEach(function (dataset, i) {
-
-          // Add X values
-          dataset.data = Highcharts.map(dataset.data, function (val, j) {
-              return [activity.xData[j], val];
-          });
-
-          var chartDiv = document.createElement('div');
-          chartDiv.className = 'chart col-sm-10';
-
-          var chartRow = document.createElement('div');
-          chartRow.className = 'row no-gutters';
-
-          document.getElementById('charts').appendChild(chartRow);
-          document.getElementById('charts').lastChild.innerHTML="<div class='col-sm-2'>"+dataset.html+"</div>";
-          document.getElementById('charts').lastChild.appendChild(chartDiv);
-
-          Highcharts.chart(chartDiv, {
-              chart: {
-                  marginLeft: 40, // Keep all charts left aligned
-                  spacingTop: 20,
-                  spacingBottom: 20
-              },
-              title: {
-                  text: dataset.name,
-                  align: 'left',
-                  margin: 0,
-                  x: 30
-              },
-              credits: {
-                  enabled: false
-              },
-              legend: {
-                  enabled: false
-              },
-              xAxis: {
-                  crosshair: true,
-                  events: {
-                      setExtremes: syncExtremes
-                  },
-                  labels: {
-                      format: ' '
-                  },
-                  tickPixelInterval: 15,
-
-              },
-              yAxis: {
-                labels: {
-                    format: ' '
-                },
-                  title: {
-                      text: null
-                  },
-
-              },
-
-
-              tooltip: {
-
-    borderRadius: 10,
-    borderWidth: 0
-},
-              series: [{
-                  data: dataset.data,
-                  name: dataset.name,
-                  type: dataset.type,
-                  color: "#7cb7de",
-                   lineWidth: 1,
-                  fillOpacity: 0.3,
-                  tooltip: {
-                      valueSuffix: ' ' + dataset.unit
-                  }
-              }]
-          });
-      });
-  }
-});
             </script>
             <div class="row">
                 <div class="col-sm-4">

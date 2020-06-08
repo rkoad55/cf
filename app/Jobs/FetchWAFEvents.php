@@ -45,7 +45,7 @@ class FetchWAFEvents implements ShouldQueue
 
 
 
- $key     = new \Cloudflare\API\Auth\APIKey($this->zone->cfaccount->email, $this->zone->cfaccount->user_api_key);
+  $key     = new \Cloudflare\API\Auth\APIKey($this->zone->cfaccount->email, $this->zone->cfaccount->user_api_key);
         $adapter = new \Cloudflare\API\Adapter\Guzzle($key);
         $waf   = new \Cloudflare\API\Endpoints\WAF($adapter);
 
@@ -53,9 +53,9 @@ class FetchWAFEvents implements ShouldQueue
 
         $events=$waf->getEvents($this->zone->zone_id);
         
+//die('ok');
 
-
-      // dd($events);
+     // dd($events);
 
 
         foreach ($events as $event) {

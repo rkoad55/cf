@@ -46,7 +46,7 @@ class FetchFirewallRules implements ShouldQueue
        $rules=$zones->getZoneAccessRules($this->zone->zone_id);
 
 
-        // dd($rules);
+         //dd($rules);
 
         //dd($records);
             foreach ($rules as $rule) {

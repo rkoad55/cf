@@ -21,6 +21,8 @@ use App\wafRule;
 use App\Jobs\FetchFirewallRules;
 use App\Jobs\FetchFWRules;
 use App\Jobs\FetchUaRules;
+use App\Jobs\FetchWAFEvents;
+use App\wafEvent;
 use App\Jobs\UpdateSPWAF;
 use App\Jobs\DeleteFirewallRule;
 use App\Jobs\DeleteFWRule;
@@ -65,7 +67,7 @@ class FirewallController extends Controller
 
          $wafPackages=$zone->wafPackage;
 
-         $events=$zone->wafEvent->sortBy('timestamp')->take(500);
+         
         // dd($wafPackages->first()->wafGroup);
         if($zone->cfaccount_id!=0)
         {   
@@ -73,6 +75,8 @@ class FirewallController extends Controller
 
             // Uncomment all these 3
              FetchFirewallRules::dispatch($zone)->onConnection('sync');
+             FetchWAFEvents::dispatch($zone)->onConnection('sync');
+             $events=$zone->wafEvent->sortBy('timestamp')->take(500);
             FetchUaRules::dispatch($zone)->onConnection('sync');
             FetchFWRules::dispatch($zone)->onConnection('sync');
             $rules=$zone->FirewallRule;
@@ -87,6 +91,8 @@ class FirewallController extends Controller
         }
         else
         {
+
+            $events=$zone->wafEvent->sortBy('timestamp')->take(500);
             $rules=$zone->SpRule;
             // dd($rules);
             
