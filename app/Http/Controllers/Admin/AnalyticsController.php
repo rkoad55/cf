@@ -329,7 +329,7 @@ if(isset($results['hits']['hits']))
 
     public function getAnalyticsJson($zone, Request $request)
     {
-
+die('ok');
       // $request->merge(['minutes' => "43200"]);
     $array=$this->index($zone,$request,true);
 
@@ -982,6 +982,32 @@ $threats = $threat_arr;
 return view('admin.analytics.index', compact('zone','records','requests','request_all','request_cached','request_uncached','bandwidth','bandwidth_saved','bandwidth_cached','bandwidth_all','xlabel','timestamp','unique_all','unique_max','unique_min','uniques','threats','threats_all','top_threats_country','top_threat_type','top_threats_origin','top_traffic_origins','top_bots','servers_needed','ssl_graph','ssl','unencrypted_ssl','content_type','threats_mitigated','minutes','status_codes','zoneObj','zoneName','deviceType','hosts','referers','clientsIP','ClientRequestURI','ClientRequestMethod','ClientRequestUserAgent','browsers','browserOnly','browserTotal','platfomTotal','platforms','WAFRules'));
     }
 
+
+
+
+    public function reserved_ip($ip)
+{
+    $reserved_ips = array( // not an exhaustive list
+    '167772160'  => 184549375,  /*    10.0.0.0 -  10.255.255.255 */
+    '3232235520' => 3232301055, /* 192.168.0.0 - 192.168.255.255 */
+    '2130706432' => 2147483647, /*   127.0.0.0 - 127.255.255.255 */
+    '2851995648' => 2852061183, /* 169.254.0.0 - 169.254.255.255 */
+    '2886729728' => 2887778303, /*  172.16.0.0 -  172.31.255.255 */
+    '3758096384' => 4026531839, /*   224.0.0.0 - 239.255.255.255 */
+    );
+
+    $ip_long = sprintf('%u', ip2long($ip));
+
+    foreach ($reserved_ips as $ip_start => $ip_end)
+    {
+        if (($ip_long >= $ip_start) && ($ip_long <= $ip_end))
+        {
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
+
     /**
      * Show the form for creating a new resource.
      *
@@ -1210,7 +1236,173 @@ $params = [
 
 return view('admin.analytics.ipDetails', compact('deviceType'));
     }
+    public function Proxy(Request $request)
+    {
 
+        $data=$request->all();
+        // dd($data);
+        $dns=Dns::where('id',$data['id'])->first();
+
+        if($request->input('minutes') !==null)
+        {
+            $minutes=$request->input('minutes');
+        }
+        else
+        {
+            $minutes=60;
+        }
+        
+        
+         switch ($minutes) {
+                    case 1440:
+                        $timestamp = 'Last 24 Hours';
+                        $xlabel= 'hour';
+                        $time= "from:now-24h,mode:quick,to:now";
+                        break;
+                     case 10080:
+                        $timestamp = 'Last 7 Days';
+                        $xlabel= 'day';
+                        $time= "from:now-7d,mode:quick,to:now";
+                        break;
+                     case 43200:
+                        $timestamp = 'Last 30 Days';
+                        $xlabel= 'day';
+                        $time= "from:now-30d,mode:quick,to:now";
+                        break;
+                    case 720:
+                        $timestamp = 'Last 12 Hours';
+                        $xlabel= '30m';
+                         $time= "from:now-12h,mode:quick,to:now";
+                        break;
+                    case 360:
+                        $timestamp = 'Last 6 Hours';
+                        $xlabel= '15m';
+                         $time= "from:now-6h,mode:quick,to:now";
+                        break;
+                    case 60:
+                        $timestamp = 'Last 1 Hour';
+                        $xlabel= 'minute';
+                        $time= "from:now-1h,mode:quick,to:now";
+                        break;
+                    
+                    default:
+                        $timestamp = 'Last 24 Hours';
+                         $time= "from:now-24h,mode:quick,to:now";
+                        $xlabel= 'hour';
+                        break;
+                }
+        
+        
+              //  $stats = $zone->SpAnalytics->where('type','stats')->where('period',$period)->take($limit)->all();
+
+              ///  $request_all = $zone->SpAnalytics->where('type','stats')->where('period',$period)->take($limit)->sum("hit");
+                $request_cached = $zone->SpAnalytics->where('type','stats')->where('period',$period)->take($limit)->sum("cache_hit");
+              //  $request_uncached = $zone->SpAnalytics->where('type','stats')->where('period',$period)->take($limit)->sum("noncache_hit");
+                
+        
+        
+               // $bandwidth = $zone->SpAnalytics->where('type','stats')->where('period',$period)->take($limit)->sum("size");
+        
+              //  $bandwidth=number_format($bandwidth / (1024 * 1024 * 1024) , 2);
+        
+               
+        
+        $internalID= $zone->internalID;
+        $current_time=Carbon::now('UTC');
+        
+          $body='{
+          "size": 0,
+          "_source": {
+            "excludes": []
+          },
+          "aggs": {
+            "2": {
+              "terms": {
+                "field": "EdgeStartTimestamp",
+                "size": 1,
+                "order": {
+                  "2-orderAgg": "desc"
+                }
+              },
+              "aggs": {
+                "2-orderAgg": {
+                  "max": {
+                    "field": "EdgeStartTimestamp"
+                  }
+                }
+              }
+            }
+          },
+          "stored_fields": [
+            "*"
+          ],
+          "script_fields": {},
+          "docvalue_fields": [
+            "@timestamp",
+            "EdgeStartTimestamp"
+          ],
+          "query": {
+            "bool": {
+              "must": [
+                {
+                  "match_all": {}
+                },
+                {
+                  "match_phrase": {
+                    "ZoneID": {
+                      "query": '.$internalID.'
+                    }
+                  }
+                },
+                {
+                  "range": {
+                    "EdgeStartTimestamp": {
+                     "lte": '.$current_time->timestamp.',
+                      "gte": '.$current_time->subMinutes(4320)->timestamp.',
+                      "format": "epoch_second"
+                    }
+                  }
+                }
+              ],
+              "filter": [],
+              "should": [],
+              "must_not": []
+            }
+          }
+        }';
+
+        if(isset($dns->zone))
+        {
+                $zone=$dns->zone;
+        }
+        else
+        {
+            echo "error";
+            die();
+        }
+        $zone=$dns->zone;
+
+        if($zone->user->id == \Auth::user()->id OR auth()->user()->id==1)
+        {   
+        if($data['value']!="true")
+        {
+            $data['value']=0;
+        }
+        else
+        {
+            $data['value']=1;
+        }
+
+        $dns=Dns::where('id', $data['id'])->first();
+        $dns->proxied=$data['value'];
+
+
+        $dns->save();
+       
+        UpdateDnsRecord::dispatch($zone,$dns->id);
+
+    }
+    }
     /**
      * Store a newly created resource in storage.
      *

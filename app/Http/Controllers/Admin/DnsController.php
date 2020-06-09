@@ -69,7 +69,7 @@ class DnsController extends Controller
     public function createDNS(Request $request)
     {
         //
-
+//die('ok');
         $zone_id=$request->input('zid');
 
         $zone= Zone::find($zone_id);
@@ -119,13 +119,13 @@ class DnsController extends Controller
         }
         else
         {
-            $data['proxiable']=0;
-            $data['proxied']=0;
+          //  $data['proxiable']=0;
+           // $data['proxied']=0;
         }
         $record=DNS::create($data);
 
 
-        UpdateDnsRecord::dispatch($zone,$record->id)->onConnection('sync');
+        UpdateDnsRecord::dispatch($zone,$record->id);
 
        // echo "success";
          return redirect()->route('admin.dns',['zone'   =>  $zone->name]);
@@ -298,7 +298,23 @@ class DnsController extends Controller
 
         $data=$request->all();
         $dns=Dns::find($data['id']);
+        $events_dns = $zone->wafEvent->sortByDesc('ts')->where('ts','>',$tsEvent)->sortBy('ts');
 
+        $threats=array();
+         foreach ($events as $key=>$event) {
+             # code...
+
+             // dd($event);
+            $threats[$key]['name']=$event->first()->country;
+            $threats[$key]['code']=array_search($threats[$key]['name'], (array)$names);
+            $threats[$key]['value']=$event->count();
+            // $threats[$key]['SRE'] = $event->where('scope','SRE')->count();
+         }
+         $threats=array_values($threats);
+
+         return response()->json($threats);
+         die();
+         }
 
          if(isset($dns->zone))
         {

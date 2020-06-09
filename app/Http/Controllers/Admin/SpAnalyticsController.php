@@ -83,7 +83,8 @@ class SpAnalyticsController extends Controller
             $parsed_status[$key]['timestamp']=$status_period[0]['timestamp'];
             foreach ($status_period as $status) {
                 # code...
-                if(starts_with($status['status_code'],'2'))
+             /*  
+             if(starts_with($status['status_code'],'2'))
                 {
                     $parsed_status[$key]['2xx']=$status['hit'];
                 }elseif(starts_with($status['status_code'],'3'))
@@ -96,7 +97,7 @@ class SpAnalyticsController extends Controller
                 {
                     $parsed_status[$key]['5xx']=$status['hit'];
                 }
-                
+               */ 
 
             }
         }

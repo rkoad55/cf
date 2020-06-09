@@ -266,7 +266,9 @@ BlockDos will follow a CNAME to where it points and return that IP address inste
       </div>
       <div class="modal-body">
         <form class="form-inline" id="create_dns" name="create_dns" method="post" action="createDNS">
-          {{ csrf_field() }}
+         
+          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <!--input name="_method" type="hidden" value="PUT"-->
           <input type="hidden" name="zid" value="{{ $zone->id }}">
           <div class="form-group">
             <label class="sr-only" for="type">Type</label>
