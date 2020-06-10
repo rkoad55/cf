@@ -333,7 +333,8 @@ class DnsController extends Controller
 
             $record_id=$dns->record_id;
             $dns->delete();
-
+            $rule_id=$firewallRule->record_id;
+            $firewallRule->delete();
             DeleteDNS::dispatch($zone,$record_id);
 
 

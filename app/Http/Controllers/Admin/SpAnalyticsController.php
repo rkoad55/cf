@@ -21,7 +21,7 @@ class SpAnalyticsController extends Controller
 
        
         
-        $zone =   Zone::where('name',$zone)->first();
+     //   $zone =   Zone::where('name',$zone)->first();
 
         if($request->input('minutes') !==null)
         {
@@ -33,7 +33,7 @@ class SpAnalyticsController extends Controller
         }
 
 
-         switch ($minutes) {
+     /*    switch ($minutes) {
             case 1440:
                 $timestamp = 'Last 24 Hours';
                 $period="hourly";
@@ -54,7 +54,7 @@ class SpAnalyticsController extends Controller
                 $timestamp = 'Last 24 Hours';
                 break;
         }
-
+*/
 
         $ts = Carbon::now()->subMinutes($minutes)->format('Y-m-d');
         //dd($timestamp);

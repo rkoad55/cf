@@ -698,14 +698,17 @@
                             @foreach (array_slice($WAFRules,0,5) as $rule)
 
 <?php
-   //                                   $zone->wafPackage;
-   // $wafRule=wafRule::where('record_id',$rule['key'])->each(function ($item, $key) {
-   //      id($item->wafGroup->wafPackage->zone_id==$zone->id)
-   //      {
+                                    
 
-   //      }
-   // });
-   // dd($wafRule);
+
+                                    $zone->wafPackage;
+                                    $wafRule=wafRule::where('record_id',$rule['key'])->each(function ($item, $key) {
+                                         id($item->wafGroup->wafPackage->zone_id==$zone->id)
+                                         {
+                                
+                                         }
+                                    });
+                                   // dd($wafRule);
 
    ?>
                             <tr>

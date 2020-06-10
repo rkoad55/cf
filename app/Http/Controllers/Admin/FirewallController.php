@@ -362,7 +362,37 @@ class FirewallController extends Controller
            $uaRule->save();
 
 
-       
+           $id=$request->input('id');
+
+           $wafGroup = wafGroup::where('id',$id)->first();
+   
+   
+           if($request->input('value')=="true")
+           {
+               $value="on";
+           }
+           else
+           {
+               $value="off";
+           }
+   
+          
+           $wafGroup->mode=$value;
+           $wafGroup->save();
+          
+   
+   
+   
+           
+           if($zone->cfaccount_id!=0)
+           {
+               UpdateWAFGroup::dispatch($zone, $wafGroup->id);
+           }
+           else
+           {
+               UpdateSPWAF::dispatch($zone, $wafGroup->id);
+           }
+           
         
 
         
@@ -658,7 +688,12 @@ public function updateWafPackage(Request $request, $zone)
 
         $data=$request->all();
         $UaRule=UaRule::find($data['id']);
+        echo $wafPackage->{$request->input('setting')};
+        $wafPackage->{$request->input('setting')}=$request->input('value');
 
+        $wafPackage->save();
+
+        $wafPackage = $zone->wafPackage->where('id',$id)->first();
         
         $zone=$UaRule->zone;
 
